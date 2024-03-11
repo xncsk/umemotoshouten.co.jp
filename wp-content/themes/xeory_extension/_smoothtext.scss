@@ -1,0 +1,20 @@
+.smoothText{
+	display: flex;
+	overflow: hidden;
+	span{
+		display: block;
+		transform: translate(0, 105%);
+		transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+		@for $i from 1 through 13 {
+			&:nth-child(#{$i + 1}) {
+				$delay: $i * 0.06 + s;
+				transition-delay: $delay;
+			}
+		}
+	}
+	&.is-active{
+		span{
+			transform: translate(0, 0);
+		}
+	}
+}

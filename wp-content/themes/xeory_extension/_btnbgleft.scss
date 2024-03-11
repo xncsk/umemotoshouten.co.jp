@@ -1,0 +1,112 @@
+.btn{
+	position: relative;
+	overflow: hidden;
+	text-decoration: none;
+	display: inline-block;
+	padding: 1.5rem 2rem;
+	text-align: center;
+	outline: none;
+	transition: ease .2s;
+	border-radius: .4rem;
+	line-height: 1;
+	box-shadow: $box-shadow;
+	span,
+	input {
+		position: relative;
+		z-index: 3;
+		// color:$text-color;
+		color: $main-color;
+		transition: var(--transition);
+	}
+	input{
+		background: transparent;
+		padding: 1rem 1.5rem;
+		border: 0;
+	}
+	// &:hover{
+	// 	span{
+	// 		color:#fff;
+	// 	}
+	// }
+}
+.btn-big{
+	padding: 1.5rem 3.5rem;
+	font-size: 2rem;
+}
+
+[class^="bgleft-"],
+[class*=" bgleft-"]{
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 2;
+		// background:$accent-color;
+		width: 100%;
+		height: 100%;
+		transition: transform .6s cubic-bezier(0.8, 0, 0.2, 1) 0s;
+		transform: scale(0, 1);
+		transform-origin: right top;
+	}
+	&:hover{
+		&::before{
+			transform-origin:left top;
+			transform:scale(1, 1);
+		}
+	}
+}
+.bgleft-main{
+	background: $main-color;
+	span,
+	input {
+		color:white;
+	}
+	&::before {
+		background:$accent-color;
+	}
+	&:hover{
+		span,
+		input {
+			color:white;
+		}
+	}
+}
+.bgleft-sub{
+	background: $sub-color;
+	span,
+	input {
+		color:white;
+	}
+	&::before {
+		background:$main-color;
+	}
+}
+.bgleft-accent{
+	background: $accent-color;
+	span,
+	input {
+		color:white;
+	}
+	&::before {
+		background:$main-color;
+	}
+}
+.bgleft-gray{
+	background: $gray-light;
+	span,
+	input {
+		color:$text-color;
+	}
+	&::before {
+		background: $gray-dark;
+	}
+}
+
+
+.mw_wp_form{
+	.btn{
+		padding: 0;
+		border:0;
+	}
+}

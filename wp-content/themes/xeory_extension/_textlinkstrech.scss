@@ -1,0 +1,69 @@
+.textlinkstretch{
+	position:relative;
+	padding: 1rem 5rem 1rem 2rem;
+	display:inline-block;
+	text-decoration: none;
+	outline: none;
+	&::before,
+	&::after{
+		content:'';
+		position:absolute;
+		z-index:1;
+		bottom:0;
+		left:0;
+		background:$link-color;
+		width:100%;
+		height:2px;
+		transition:all 0.3s ease-in-out;
+	}
+	&::after{
+		width:0;
+		background:$accent-color;
+	}
+	&.is-hoverwhite{
+		&:hover{
+			color: white;
+			// &::after{
+			// 	width: 100%;
+			// }
+			span{
+				&::after{
+					border-top: 1px solid white;
+					border-right: 1px solid white;
+					right:15px;
+				}
+			}
+		}
+		&::after{
+			width:0;
+			background:white;
+		}
+	}
+	&:hover{
+		color: $accent-color;
+		&::after{
+			width: 100%;
+		}
+		span{
+			&::after{
+				border-top: 1px solid $accent-color;
+				border-right: 1px solid $accent-color;
+				right:15px;
+			}
+		}
+	}
+	span{
+		&::after{
+			content: '';
+			position: absolute;
+			top: 1.3em;
+			right: 20px;
+			width: 5px;
+			height: 5px;
+			border-top: 1px solid $main-color;
+			border-right: 1px solid $main-color;
+			transform: rotate(45deg);
+			transition: all .3s;
+		}
+	}
+}

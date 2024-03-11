@@ -1,0 +1,80 @@
+<table class="table table-responsive-tr-block form mb30">
+	<tbody>
+		<tr>
+			<th class="span-3 tab-span-4 tal">応募職種</th>
+			<td>[mwform_radio name="jobtype" children="内装職人" value="内装職人"]</td>
+		</tr>
+		<tr>
+			<th class="tal">お名前<span class="label bg-red ml5">必須</span></th>
+			<td>
+				<div class="df df-jc-between">
+					<div class="span-6 tab-mb10">
+						[mwform_text name="name1" placeholder="姓"]
+					</div>
+					<div class="span-6">
+						[mwform_text name="name2" placeholder="名"]
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th class="tal">生年月日<span class="label bg-red ml5">必須</span></th>
+			<td>
+				<div class="df df-jc-between">
+					<div class="span-4">
+						<div class="input-group tab-mb10">
+							[mwform_text name="year" placeholder="1990"]
+							<div class="input-group-append"><div class="input-group-text">年</div></div>
+						</div>
+					</div>
+					<div class="span-4">
+						<div class="input-group tab-mb10">
+							[mwform_select name="month" children="1,2,3,4,5,6,7,8,9,10,11,12" class="form-control" class="custom-select"]
+							<div class="input-group-append"><div class="input-group-text">月</div></div>
+						</div>
+					</div>
+					<div class="span-4">
+						<div class="input-group">
+							[mwform_select name="day" children="1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31" class="form-control" class="custom-select"]
+							<div class="input-group-append"><div class="input-group-text">日</div></div>
+						</div>
+					</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th class="tal">住所<span class="label bg-red ml5">必須</span></th>
+			<td>
+				<div class="mb10"><span class="p-country-name" style="display:none;">Japan</span>[mwform_zip name="zipcode" class="p-postal-code" conv_half_alphanumeric="true"]</div>
+				<div class="df df-jc-between">
+					<div class="span-6 tab-mb10">[mwform_text name="address" class="p-region p-locality p-street-address p-extended-address" placeholder="○○県○○市○○1-1-1"]</div>
+					<div class="span-6">[mwform_text name="building" placeholder="建物名"]</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th class="tal">携帯電話</th>
+			<td>
+				[mwform_tel name="tel"]
+			</td>
+		</tr>
+		<tr>
+			<th class="tal">メールアドレス<span class="label bg-red ml5">必須</span></th>
+			<td>
+				<div class="span-6">
+					[mwform_text name="email" placeholder="○○@gmail.com"]
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<th class="tal">備考</th>
+			<td>
+				[mwform_textarea name="remarks"]
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div class="tac mb50">
+	<div class="btn bgleft-gray dib">[mwform_backButton value="修正する"]</div>&nbsp;&nbsp;
+	<div class="btn bgleft-accent dib">[mwform_submitButton confirm_value="確認画面へ" submit_value="送信する" id="blue"]</div>
+</div>
