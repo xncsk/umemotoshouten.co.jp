@@ -57,6 +57,16 @@ define( 'SECURE_AUTH_SALT', '*}J,K@J7X${^v^+IDL_oc[X[(F%n}{_TcmN6teeAzYRiRFYYZ2C
 define( 'LOGGED_IN_SALT',   '_n$G<Y$mfx9IMq|Qcw>46n9MquS)hgcx~xJkgBcOI~W5?u5amJvm{vek#~ko3%xi' );
 define( 'NONCE_SALT',       'XTLYw=_;fCX+myU/lu<_Y^E`4L`1Qcl4b#d#rGwYrt!-N]S9e!)=d}So|f4O|8!(' );
 
+define( 'SITENAMESHORT', '梅本商店');
+define( 'COMPANYNAME', '株式会社梅本商店');
+define( 'ZIPCODE', '〒337-0033');
+define( 'ADDRESS', '埼玉県さいたま市見沼区御蔵19-77');
+define( 'DAIHYONAME', '梅本 和史');
+define( 'TEL', '048−627-7539');
+// define( 'MOBILE', '090−6924-6498');
+define( 'FAX', '048−627-7539');
+define( 'STARTTIME', '9:00');
+define( 'ENDTIME', '18:00');
 /**#@-*/
 
 /**

@@ -17,10 +17,6 @@
 											<dt class="label bg-accent mr5">TEL</dt>
 											<dd class="fs16"><?= TEL ?></dd>
 										</dl>
-										<dl class="fs0 df df-ai-center df-nowrap">
-											<dt class="label bg-accent mr5">MOBILE</dt>
-											<dd class="fs16"><?= MOBILE ?></dd>
-										</dl>
 									</div>
 								</dd>
 							</dl>

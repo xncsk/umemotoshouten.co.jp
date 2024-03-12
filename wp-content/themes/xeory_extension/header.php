@@ -37,7 +37,7 @@
 				<div class="mb20">
 					<p class="fkds-slash is-white white mb10">お気軽にお電話ください。</p>
 					<div class="tac">
-						<a href="tel:<?= MOBILE ?>" class="btn bgleft-accent">
+						<a href="tel:<?= TEL ?>" class="btn bgleft-accent">
 							<span class="i-mobile mr5"></span><span>電話する</span>
 						</a>
 					</div>
