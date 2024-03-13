@@ -89,11 +89,11 @@ if( !function_exists('bzb_header_meta') ){
 		remove_filter('term_description','wpautop');
 
 		if( is_front_page() || is_home() ){
-			$title = get_bloginfo('title').' - 春日部市の内装トータルリフォーム会社';
+			$title = get_bloginfo('title').' - さいたま市のマンションリフォーム専門業者';
 			$type  = 'website';
-			$description = '春日部市を拠点に活動する内装リフォーム専門業者、'. COMPANYNAME .'。豊富な経験と確かな技術で、お客様の理想を形にします。無料見積もり、安心のアフターサポートも充実。お気軽にご相談ください。';
+			$description = 'さいたま市を拠点とするマンションリフォーム、'. COMPANYNAME .'。豊富な経験とプロの技術で、あなたのマンションを理想の住まいに変えます。お客様のニーズに合わせたリノベーションサービスを提供しています。';
 			$url =  home_url();
-			$keyword = '株式会社CHANGE,チェンジ';
+			$keyword = get_bloginfo('title');
 		}elseif (is_archive()){
 			if( is_category() ){
 				// カテゴリーページ

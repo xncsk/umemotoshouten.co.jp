@@ -1,3 +1,29 @@
+.text-white-shadow{
+	text-shadow: 0 -1px 7px rgba(255,255,255,0.3),0 1px 7px rgba(255,255,255,0.3),1px 0px 7px rgba(255,255,255,0.3),-1px 0px 7px rgba(255,255,255,0.3);
+}
+.text-black-shadow{
+	text-shadow: 0 -1px 7px rgba(0,0,0,0.3),0 1px 7px rgba(0,0,0,0.3),1px 0px 7px rgba(0,0,0,0.3),-1px 0px 7px rgba(0,0,0,0.3);
+}
+// .h1,
+// .h2{
+// 	line-height:1.4;
+// 	font-weight: bold;
+// 	display: flex;
+// 	align-items: center;
+// 	&:after,
+// 	&:before{
+// 		content: "";
+// 		height: 1px;
+// 		flex-grow: 1;
+// 		background-color: $black;
+// 	}
+// 	&:before{
+// 		margin-right: 1rem;
+// 	}
+// 	&:after{
+// 		margin-left: 1rem;
+// 	}
+// }
 .career-step{
 	overflow: hidden;
 	position: relative;

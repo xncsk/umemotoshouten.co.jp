@@ -1,14 +1,51 @@
 <?php get_header(); ?>
-<section class="box-mv relative">
-	<div class="js-appear dn">
-		<?php get_template_part('part-logo-animation'); ?>
+<div id="swiper" class="mv02 l-section">
+	<div class="swiper">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="slide"><?php
+					if(wp_is_mobile()){
+						echo '<figure class="slide-media"><img src="/img/mv-top-sp1-min.jpg" alt="トップページメインビジュアル1"></figure>';
+					} else {
+						echo '<figure class="slide-media"><img src="/img/w3000xh2000-mv1.jpg" alt="トップページメインビジュアル1"></figure>';
+					}
+					?><h2 class="slide-title font-noto-serif white text-black-shadow">時代を超えたデザインと機能性</h2>
+					<p class="slide-text white text-black-shadow">こだわりのマンションリノベーション。</p>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="slide"><?php
+					if(wp_is_mobile()){
+						echo '<figure class="slide-media"><img src="/img/mv-top-sp2-min.jpg" alt="トップページメインビジュアル2"></figure>';
+					} else {
+						echo '<figure class="slide-media"><img src="/img/w3000xh2000-mv2.jpg" alt="トップページメインビジュアル2"></figure>';
+					}
+					?>
+					<h2 class="slide-title font-noto-serif white text-black-shadow">自然との共生が生む、<br>心地よい暮らし。</h2>
+					<p class="slide-text white text-black-shadow">環境に優しい建築素材を使用。</p>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="slide"><?php
+					if(wp_is_mobile()){
+						echo '<figure class="slide-media"><img src="/img/mv-top-sp3-min.jpg" alt="トップページメインビジュアル3"></figure>';
+					} else {
+						echo '<figure class="slide-media"><img src="/img/w3000xh2000-mv3.jpg" alt="トップページメインビジュアル3"></figure>';
+					}
+					?>
+					<h2 class="slide-title font-noto-serif black text-white-shadow">マンションフルリフォーム</h2>
+					<p class="slide-text black text-white-shadow">マンションリノベーションのプロが叶える理想の空間。</p>
+				</div>
+			</div>
+		</div>
+		<div class="swiper-pagination"></div>
 	</div>
-</section>
+</div>
 <section class="section">
 	<div class="wrap">
-		<header class="tac mb5vw">
-			<h2 class="smoothText activeTrigger h2 df-jc-center">OUR&nbsp;SERIVCE</h2>
-			<p class="gray fade-in fade-in-up"><?= COMPANYNAME ?>の業務内容</p>
+		<header class="mb5vw">
+			<h2 class="smoothText activeTrigger h2 borderLeftTrigger">SERIVCE</h2>
+			<p class="gray fade-in fade-in-up"><?= COMPANYNAME ?>の事業紹介</p>
 		</header>
 		<ul class="df li-service">
 			<li>

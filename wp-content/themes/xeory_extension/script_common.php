@@ -4,6 +4,7 @@
 		var headerheight = $("#header").outerHeight();
 		$(".box-mv").css("height", windowHeight);
 		$(".content").css("padding-top", headerheight);
+		$(".mv02 .swiper-wrapper").css("height", windowHeight);
 	});
 </script>
 <script>
@@ -70,6 +71,21 @@ function BlurTextAnimeControl() {
 $(window).scroll(function () {
 	BlurTextAnimeControl();
 });
+</script>
+<script>
+	function borderRightAnime(){
+		$('.borderLeftTrigger').each(function(){
+			var elemPos = $(this).offset().top+50;
+			var scroll = $(window).scrollTop();
+			var windowHeight = $(window).height();
+			if (scroll >= elemPos - windowHeight){
+				$(this).addClass('borderExtend border-left-extend');
+			}
+		});
+	}
+	$(window).scroll(function (){
+		borderRightAnime();
+	});
 </script>
 <script>
 	function bgLRAnime(){

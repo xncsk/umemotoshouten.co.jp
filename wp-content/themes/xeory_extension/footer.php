@@ -40,6 +40,62 @@
 <div id="page_top"><a href="#"></a></div>
 <?php wp_footer(); ?>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous"></script>
+<?php if(is_home() || is_front_page()): ?>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<script>
+		const myDelay = 7000;
+		let timer;
+		const switchAnimation = () => {
+			clearTimeout(timer);
+			let activeSlide = document.querySelectorAll('.mv02 .swiper-slide[class*=-active]');
+			for (let i = 0; i < activeSlide.length; i++) {
+				activeSlide[i].classList.remove('anm-finished');
+				activeSlide[i].classList.add('anm-started');
+			}
+			timer =  setTimeout(() => {
+				for (let i = 0; i < activeSlide.length; i++) {
+					activeSlide[i].classList.remove('anm-started');
+					activeSlide[i].classList.add('anm-finished');
+				}
+			}, myDelay - 1000);
+		}
+		const finishAnimation = () => {
+			let activeSlide = document.querySelectorAll('.mv02 .swiper-slide.anm-started');
+			for (let i = 0; i < activeSlide.length; i++) {
+				activeSlide[i].classList.remove('anm-started');
+				activeSlide[i].classList.add('anm-finished');
+			}
+		}
+
+		const mySwiper = new Swiper('.mv02 .swiper', {
+			effect: 'fade',
+			fadeEffect: {
+				crossFade: true,
+			},
+			loop: true,
+			loopAdditionalSlides: 1,
+			speed: 2000,
+			autoplay: {
+				delay: myDelay,
+				disableOnInteraction: false,
+				waitForTransition: false,
+			},
+			followFinger: false,
+			pagination: {
+				el: '.mv02 .swiper-pagination',
+				clickable: true,
+			},
+			on: {
+				slideChange: () => {
+					finishAnimation();
+				},
+				slideChangeTransitionStart: () => {
+					switchAnimation();
+				},
+			}
+		});
+	</script>
+<?php endif; ?>
 <?php get_template_part('script_common'); ?>
 <?php if(is_page('entry')): ?>
 	<script>
@@ -58,6 +114,8 @@
 		});
 	});
 </script>
+<?php
+/*
 <?php if(is_home() || is_front_page()): ?>
 <script>
 	$(document).ready(function() {
@@ -67,6 +125,8 @@
 	});
 </script>
 <?php endif; ?>
+*/
+?>
 <?php if(is_page('recruit')): ?>
 <script>
 	$(function() {
