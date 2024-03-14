@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <div id="content" class="content">
 	<section class="wrap">
-		<div class="breadcrumb-box mb20 mt10">
+		<div class="breadcrumb-box mb10vw mt10">
 			<ol class="breadcrumb breadcrumb-global" itemscope itemtype="http://schema.org/BreadcrumbList">
 				<?php if(function_exists('bcn_display')){
 					bcn_display_list();
@@ -10,9 +10,9 @@
 		</div>
 	</section>
 	<article id="main" role="main" itemprop="mainContentOfPage" class="wrap mb10vw">
-		<header class="mb3vw">
-			<h1 class="smoothText activeTriggerOnload h1 b df-jc-center">お知らせ</h1>
-			<p class="tac gray fadeUpOnload">NEWS</p>
+		<header class="mb5vw">
+			<h1 class="smoothText activeTriggerOnload borderExtend border-left-extend h1 b df-jc-center">NEWS</h1>
+			<p class="gray fadeUpOnload"><?= COMPANYNAME ?>の最新のお知らせ</p>
 		</header>
 		<ul class="li-border is-dashed mb5vw">
 			<?php
