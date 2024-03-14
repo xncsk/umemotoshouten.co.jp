@@ -9,7 +9,7 @@
 			</ol>
 		</div>
 		<div id="main" role="main" class="df df-jc-between mb10vw">
-			<div class="post-inner span-9 bg-gray p3vw">
+			<div class="post-inner p3vw">
 				<?php
 				if ( have_posts() ) :
 					while ( have_posts() ) : the_post();
@@ -57,7 +57,6 @@
 					</div>
 				</div>
 			</div>
-			<?php get_sidebar(); ?>
 		</div>
 	</div>
 	<?php get_template_part('cta') ?>
