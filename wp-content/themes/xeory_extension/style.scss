@@ -7,7 +7,6 @@
 @import "textlinkstrech";
 @import "swiper";
 @import "logo-animation";
-@import "blur";
 @import "extend";
 @import "smoothtext";
 
@@ -694,6 +693,9 @@ html{
 	}
 	&.is-accent{
 		border-color:$accent-color;
+	}
+	&.is-text-color{
+		border-color:$text-color;
 	}
 }
 .ratio-43{

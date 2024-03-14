@@ -45,79 +45,103 @@
 	<div class="wrap">
 		<header class="mb5vw">
 			<h2 class="smoothText activeTrigger h2 borderLeftTrigger">SERIVCE</h2>
-			<p class="gray fade-in fade-in-up"><?= COMPANYNAME ?>の事業紹介</p>
+			<p class="gray fade-in fade-in-up"><?= COMPANYNAME ?>は、マンションリフォームやリノベーションを主軸とし、<br>新たな展開に果敢に挑戦するチャレンジングカンパニーです。</p>
 		</header>
 		<ul class="df li-service">
 			<li>
-				<figure class="tac fade-in fade-in-down"><img src="/img/w600xh600-cross.svg" alt="壁紙・クロス張替え"></figure>
-				<dl>
-					<dt class="b tac mb10 fs2vw fade-in fade-in-down">壁紙・クロス張替え</dt>
-					<dd class="fade-in fade-in-up">当社では、お客様のご要望に合わせて、壁紙・クロスの張り替えサービスを提供しております。新しい壁紙やクロスを選ぶことで、お部屋の雰囲気を一新し、快適な空間を実現いたします。プロの職人が丁寧に作業いたしますので、安心してお任せください。</dd>
+				<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-dinoc.jpg" class="bgappearTrigger border is-text-color bw2" alt="ダイノックシート"></figure>
+				<dl class="fade-in fade-in-up">
+					<dt class="mb5 b tac">ダイノックシート</dt>
+					<dd>ダイノックシートは耐久性が高く、さまざまなデザインや色合いが用意されており、お部屋の雰囲気を一新するのに最適です。古くなった壁面の張替えや、デザインの変更をお考えの方にお勧めです。</dd>
 				</dl>
 			</li>
 			<li>
-				<figure class="tac fade-in fade-in-down delay-time02"><img src="/img/w600xh600-floor.svg" alt="床・フローリング工事"></figure>
-				<dl>
-					<dt class="b tac mb10 fs2vw fade-in fade-in-down delay-time02">床・フローリング工事</dt>
-					<dd class="fade-in fade-in-up delay-time02">お客様のご要望に合わせて、さまざまな素材やデザインのフローリングを提案いたします。木材や合成樹脂など、豊富な素材を取り揃えておりますので、お好みやお部屋のスタイルに合わせて最適なフローリングをお選びいただけます。</dd>
+				<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-outerwall.jpg" class="bgappearTrigger border is-text-color bw2" alt="外壁工事・塗装工事"></figure>
+				<dl class="fade-in fade-in-up">
+					<dt class="mb5 b tac">外壁工事・塗装工事</dt>
+					<dd>外壁は建物を守る重要な要素であり、風雨や紫外線などの外部からの影響を受けやすいため、定期的なメンテナンスが必要です。</dd>
 				</dl>
 			</li>
 			<li>
-				<figure class="tac fade-in fade-in-down delay-time04"><img src="/img/w600xh600-enbi.svg" alt="塩ビタイル張替え"></figure>
-				<dl>
-					<dt class="b tac mb10 fs2vw fade-in fade-in-down delay-time04">塩ビタイル張替え</dt>
-					<dd class="fade-in fade-in-up delay-time04">古くなったり傷んだりしたタイルを新しいものに交換することで、お部屋全体の印象を一新し、清潔で美しい空間をご提供いたします。塩化ビニールタイルは耐久性が高く、お手入れも簡単ですので、長期間にわたって美しい床をお楽しみいただけます。</dd>
+				<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-window.jpg" class="bgappearTrigger border is-text-color bw2" alt="窓枠工事"></figure>
+				<dl class="fade-in fade-in-up">
+					<dt class="mb5 b tac">窓枠工事</dt>
+					<dd>古くなった窓枠は風や雨の浸入を招き、断熱性や防音性の低下につながる恐れがあります。専門のチームが正確な計測と高品質な素材を使用し、丁寧に窓枠の取り替えや補修を行います。</dd>
 				</dl>
 			</li>
 			<li>
-				<figure class="tac fade-in fade-in-down"><img src="/img/w600xh600-shiba.svg" alt="人工芝張替え"></figure>
-				<dl>
-					<dt class="b tac mb10 fs2vw fade-in fade-in-down">人工芝張替え</dt>
-					<dd class="fade-in fade-in-up">人工芝は、自然な緑の美しさを保ちながら、手入れが簡単で長持ちする素材です。古くなったり劣化したりした人工芝を新しいものに交換することで、庭やテラスなどの外装を美しくリニューアルすることができます。また、人工芝は天候や季節の影響を受けにくいため、一年を通じて美しい庭をお楽しみいただけます。</dd>
+				<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-repair.jpg" class="bgappearTrigger border is-text-color bw2" alt="外壁補修"></figure>
+				<dl class="fade-in fade-in-up">
+					<dt class="mb5 b tac">外壁補修</dt>
+					<dd>外壁は建物を保護し、美観を維持する重要な要素ですが、時間の経過とともに劣化や破損が生じることがあります。外壁にひび割れや塗膜の剥がれ、サビなどが見られる場合は、早めの補修が必要です。</dd>
 				</dl>
 			</li>
 			<li>
-				<figure class="tac fade-in fade-in-down delay-time02"><img src="/img/w600xh600-dinoc.svg" alt="ダイノックシート張替え"></figure>
-				<dl>
-					<dt class="b tac mb10 fs2vw fade-in fade-in-down delay-time02">ダイノックシート張替え</dt>
-					<dd class="fade-in fade-in-up delay-time02">ダイノックシートは、高品質な表面材料を使用した耐久性のあるシートで、木目や石目などのさまざまなデザインがあります。ダイノックシートは耐久性が高く、汚れや傷みにも強いため、長期間美しい状態を保つことができます。経験豊富な職人が丁寧に施工いたしますので、安心してお任せください。</dd>
+				<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-tile.jpg" class="bgappearTrigger border is-text-color bw2" alt="タイル工事"></figure>
+				<dl class="fade-in fade-in-up">
+					<dt class="mb5 b tac">タイル工事</dt>
+					<dd>壁やタイルは室内外の美観や清潔さに大きな影響を与えますが、時間とともに傷みや汚れが蓄積されることがあります。</dd>
 				</dl>
 			</li>
 			<li>
-				<figure class="tac fade-in fade-in-down delay-time04"><img src="/img/w600xh600-allinterior.svg" alt="内装工事全般"></figure>
-				<dl>
-					<dt class="b tac mb10 fs2vw fade-in fade-in-down delay-time04">内装工事全般</dt>
-					<dd class="fade-in fade-in-up delay-time04">当社では、内装工事全般を承っております。お客様のご要望に合わせて、リフォームや新築時の内装工事を幅広く対応いたします。壁紙・クロスの張替えや床材の張替え、天井のリフォーム、人工芝やダイノックシートの施工など、さまざまな内装工事を経験豊富な職人が丁寧に行います。</dd>
+				<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-sealing.jpg" class="bgappearTrigger border is-text-color bw2" alt="シーリング工事"></figure>
+				<dl class="fade-in fade-in-up">
+					<dt class="mb5 b tac">シーリング工事</dt>
+					<dd>シーリングは建物の隙間や接合部を密封し、水漏れや風の侵入を防ぐ重要な役割を果たしています。時間が経つにつれてシーリング材の劣化や剥がれが生じることがありますが、これらの問題は早めの補修が必要です。</dd>
+				</dl>
+			</li>
+			<li>
+				<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-entrance.jpg" class="bgappearTrigger border is-text-color bw2" alt="エントランス工事"></figure>
+				<dl class="fade-in fade-in-up">
+					<dt class="mb5 b tac">エントランス工事</dt>
+					<dd>古くなったエントランスのリニューアルや、セキュリティの強化、アクセシビリティの向上など、さまざまなニーズに応じた工事を提供しています。</dd>
+				</dl>
+			</li>
+			<li>
+				<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-pipe.jpg" class="bgappearTrigger border is-text-color bw2" alt="設備工事"></figure>
+				<dl class="fade-in fade-in-up">
+					<dt class="mb5 b tac">設備工事</dt>
+					<dd>古くなった設備の更新や、新しい設備の取り付け、改修など、お客様のニーズに合わせた工事を行っています。</dd>
+				</dl>
+			</li>
+			<li>
+				<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-interior-min.jpg" class="bgappearTrigger border is-text-color bw2" alt="内装工事"></figure>
+				<dl class="fade-in fade-in-up">
+					<dt class="mb5 b tac">内装工事</dt>
+					<dd>壁紙の張り替えや床材の交換、キッチンやバスルームの改装など、お客様のご要望に合わせた工事を行っています。</dd>
+				</dl>
+			</li>
+			<li>
+				<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-storage.jpg" class="bgappearTrigger border is-text-color bw2" alt="収納設置"></figure>
+				<dl class="fade-in fade-in-up">
+					<dt class="mb5 b tac">収納設置</dt>
+					<dd>クローゼットや押入れ、キッチンやリビングなど、さまざまな場所に収納スペースを設置いたします。お客様のニーズに合わせたカスタマイズも可能です。</dd>
+				</dl>
+			</li>
+			<li>
+				<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-largeapartment-repair.jpg" class="bgappearTrigger border is-text-color bw2" alt="大規模修繕工事"></figure>
+				<dl class="fade-in fade-in-up">
+					<dt class="mb5 b tac">大規模修繕工事</dt>
+					<dd>大規模修繕工事は、外壁や屋根の補修、給排水管の更新、共用部のリニューアルなど、建物全体の状態を改善するための総合的な工事です。</dd>
 				</dl>
 			</li>
 		</ul>
 	</div>
 </section>
-<section class="section ovh">
-	<div class="relative bgLRTrigger is-gray">
-		<div class="left-content pv10vh">
-			<header class="mb5vw">
-				<h2 class="smoothText activeTrigger h2">RECRUIT</h2>
-				<p class="gray fade-in fade-in-up"><?= COMPANYNAME ?>の求人情報</p>
-			</header>
-			<div class="fade-in fade-in-up">
-				<div class="span-5">
+<section class="section ovh bg-recruit ctiveTrigger">
+	<div class="wrap">
+		<header class="mb5vw">
+			<h2 class="smoothText activeTrigger h2 borderRightTrigger">RECRUIT</h2>
+			<p class="tar fade-in fade-in-left"><?= COMPANYNAME ?>の求人情報</p>
+		</header>
+		<div class="">
+			<div class="df df-jc-end fade-in fade-in-up">
+				<div class="span-5 p4vw bg-white-alpha">
 					<div class="read-text mb20">
-						<p><?= COMPANYNAME ?>（チェンジ）では、一緒に働く仲間を募集しています。内装工事の経験がある方、職人としてのスキルを磨きたい方、新しいチャレンジをお探しの方、ぜひご応募ください。</p>
-						<p>働きやすい環境を整えておりますので、安心してお仕事に取り組んでいただけます。やりがいのある仕事に興味がある方、ぜひご連絡ください。</p>
+						<p><?= COMPANYNAME ?>では、一緒に働く仲間を募集しています。マンションリフォームのプロフェッショナルとして、経験豊富な方はもちろん、意欲的な未経験の方も大歓迎致します。我々は、高品質なサービスとお客様の満足度を追求するために、チームワークを重視しています。安定した環境で成長したい方、やりがいを感じながら働きたい方、ぜひご応募ください。キャリアの一翼を担うチャンスを提供します。</p>
 					</div>
-					<a href="/recruit/" class="textlinkstretch fade-in fade-in-up"><span>求人情報</span></a>
+					<div class="tar"><a href="/recruit/" class="textlinkstretch fade-in fade-in-left"><span>求人情報</span></a></div>
 				</div>
-			</div>
-		</div>
-		<div class="right-out">
-			<div class="fade-in fade-in-right m3 sp-m0">
-				<figure class="tac box-shadow">
-					<picture>
-						<source srcset="/img/w1500xh1000-recruit-min.webp" type="image/webp">
-						<img src="/img/w1500xh1000-recruit-min.jpg" alt="作業着を着た男女">
-					</picture>
-				</figure>
 			</div>
 		</div>
 	</div>
@@ -125,17 +149,17 @@
 <section class="section">
 	<div class="wrap">
 		<header class="mb5vw">
-			<h2 class="smoothText activeTrigger df-jc-center fs5vw">NEWS</h2>
-			<p class="tac gray fade-in fade-in-up"><?= COMPANYNAME ?>からのお知らせ</p>
+			<h2 class="smoothText activeTrigger h2 borderLeftTrigger">NEWS</h2>
+			<p class="gray fade-in fade-in-up"><?= COMPANYNAME ?>からのお知らせ</p>
 		</header>
-		<div class="fade-in fade-in-up">
+		<div class="df df-jc-end fade-in fade-in-up">
 			<?php
 			$information= get_posts( [
 				'posts_per_page' => 3,
 				'category' => 'news'
 			]);
 			?>
-			<ul class="li-border is-solid">
+			<ul class="span-9 li-border is-solid">
 				<?php
 				foreach( $information as $post ):
 					setup_postdata( $post );

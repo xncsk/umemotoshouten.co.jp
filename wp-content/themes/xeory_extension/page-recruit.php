@@ -75,7 +75,7 @@ get_header();
 								</svg>
 								<dl class="trbl-center tac span-12">
 									<dt class="mb10 gray">GREETING</dt>
-									<dd class="b fs5vw font-noto-serif blurTrigger"><span class="main-color-light">挨拶</span></dd>
+									<dd class="b fs5vw font-noto-serif"><span class="main-color-light">挨拶</span></dd>
 								</dl>
 							</div>
 						</dt>
@@ -90,7 +90,7 @@ get_header();
 								</svg>
 								<dl class="trbl-center tac span-12">
 									<dt class="mb10 gray">COURTESY</dt>
-									<dd class="b fs5vw font-noto-serif blurTrigger"><span class="main-color-light">礼儀</span></dd>
+									<dd class="b fs5vw font-noto-serif"><span class="main-color-light">礼儀</span></dd>
 								</dl>
 							</div>
 						</dt>
@@ -105,7 +105,7 @@ get_header();
 								</svg>
 								<dl class="trbl-center tac span-12">
 									<dt class="mb10 gray">SMILE</dt>
-									<dd class="b fs5vw font-noto-serif blurTrigger"><span class="main-color-light">笑顔</span></dd>
+									<dd class="b fs5vw font-noto-serif"><span class="main-color-light">笑顔</span></dd>
 								</dl>
 							</div>
 						</dt>

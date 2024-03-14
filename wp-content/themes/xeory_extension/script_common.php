@@ -55,6 +55,8 @@ window.addEventListener('scroll', () => {
 	}
 });
 </script>
+<?php
+/*
 <script>
 function BlurTextAnimeControl() {
 	$('.blurTrigger').each(function(){
@@ -72,14 +74,31 @@ $(window).scroll(function () {
 	BlurTextAnimeControl();
 });
 </script>
+*/
+?>
 <script>
-	function borderRightAnime(){
+	function borderLeftAnime(){
 		$('.borderLeftTrigger').each(function(){
 			var elemPos = $(this).offset().top+50;
 			var scroll = $(window).scrollTop();
 			var windowHeight = $(window).height();
 			if (scroll >= elemPos - windowHeight){
 				$(this).addClass('borderExtend border-left-extend');
+			}
+		});
+	}
+	$(window).scroll(function (){
+		borderLeftAnime();
+	});
+	function borderRightAnime(){
+		$('.borderRightTrigger').each(function(){
+			var elemPos = $(this).offset().top + 50;
+			var scroll = $(window).scrollTop();
+			var windowHeight = $(window).height();
+			if (scroll >= elemPos - windowHeight){
+				$(this).addClass('borderExtend border-right-extend');
+			}else{
+				$(this).removeClass('borderExtend border-right-extend');
 			}
 		});
 	}
@@ -141,6 +160,21 @@ $(window).scroll(function () {
 	}
 	$(window).on('load',function (){
 		bgRLAnimeOnload();
+	});
+</script>
+<script>
+	function bgappearTrigger(){
+		$('.bgappearTrigger').each(function(){
+			var elemPos = $(this).offset().top;
+			var scroll = $(window).scrollTop();
+			var windowHeight = $(window).height();
+			if (scroll >= elemPos - windowHeight){
+				$(this).addClass('bgappear');
+			}
+		});
+	}
+	$(window).scroll(function (){
+		bgappearTrigger();
 	});
 </script>
 <script>
