@@ -11,30 +11,32 @@
 	</section>
 	<article id="main" role="main" itemprop="mainContentOfPage" class="wrap mb10vw">
 		<header class="mb5vw">
-			<h1 class="smoothText activeTriggerOnload borderExtend border-left-extend h1 b df-jc-center">NEWS</h1>
+			<h1 class="smoothText activeTriggerOnload borderExtend border-left-extend h1">NEWS</h1>
 			<p class="gray fadeUpOnload"><?= COMPANYNAME ?>の最新のお知らせ</p>
 		</header>
-		<ul class="li-border is-dashed mb5vw">
-			<?php
-			while ( have_posts() ) : the_post();
-				$cf = get_post_meta($post->ID); ?>
-				<li class="df df-ai-center">
-					<div class="ws-nowrap mr10 sp-mb5"><time datetime="<?php the_time('Y-m-d'); ?>" class=""><?php the_time('Y年m月d日'); ?></time></div>
-					<dl>
-						<?php
-						$category = get_the_category();
-							// if( $category ) :
-						?>
-						<dt class="fs0 sp-mb5"><span class="label label-big bg-black"><?php echo $category[0]->cat_name; ?></span></dt>
-						<dd><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></dd>
-					</dl>
-				</li>
+		<div class="df df-jc-end">
+			<ul class="span-9 li-border is-dashed mb5vw">
 				<?php
-			endwhile;
-			?>
-			<?php
-			?>
-		</ul>
+				while ( have_posts() ) : the_post();
+					$cf = get_post_meta($post->ID); ?>
+					<li class="df df-ai-center">
+						<div class="ws-nowrap mr10 sp-mb5"><time datetime="<?php the_time('Y-m-d'); ?>" class=""><?php the_time('Y年m月d日'); ?></time></div>
+						<dl>
+							<?php
+							$category = get_the_category();
+									// if( $category ) :
+							?>
+							<dt class="fs0 sp-mb5"><span class="label label-big bg-black"><?php echo $category[0]->cat_name; ?></span></dt>
+							<dd><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></dd>
+						</dl>
+					</li>
+					<?php
+				endwhile;
+				?>
+				<?php
+				?>
+			</ul>
+		</div>
 		<?php if (function_exists("pagination")) {
 			pagination($wp_query->max_num_pages);
 		}

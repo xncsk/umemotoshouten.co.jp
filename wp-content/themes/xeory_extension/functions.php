@@ -138,7 +138,7 @@ function my_exam_validation_rule( $Validation, $data, $Data ) {
 	$Validation->set_rule( 'email', 'mail', array( 'message' => '正しいメールアドレス形式でご入力ください。' ) );
 	return $Validation;
 }
-add_filter( 'mwform_validation_mw-wp-form-20', 'my_exam_validation_rule', 10, 3 );
+add_filter( 'mwform_validation_mw-wp-form-16', 'my_exam_validation_rule', 10, 3 );
 
 
 // RSSフィードのリンクを除去

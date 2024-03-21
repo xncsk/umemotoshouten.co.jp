@@ -1,15 +1,10 @@
 			</div><?php /* .main-content */ ?>
-			<footer id="footer" class="footer bg-black relative">
-				<div class="wrap pt5vw">
+			<footer id="footer" class="footer bg-gray">
+				<div class="wrap pv3vw">
 					<div class="df df-jc-between">
-						<div class="span-4 mb20">
-							<a href="<?php echo home_url(); ?>" class="logo db">
-								<figure class="mb10">
-									<img src="/img/logo-yoko-nega.svg" alt="<?= COMPANYNAME ?>ロゴ">
-								</figure>
-							</a>
-							<dl class="white">
-								<dt><?= COMPANYNAME ?></dt>
+						<div class="span-4 tab-mb30">
+							<dl>
+								<dt class="fs20 b"><?= COMPANYNAME ?></dt>
 								<dd>
 									<p><?= ZIPCODE ?>&nbsp;<?= ADDRESS ?></p>
 									<div class="df df-ai-center">
@@ -31,7 +26,7 @@
 						</div>
 					</div>
 				</div>
-				<p class="white tac fs12 pt10 pb10">&copy;<?php echo date('Y'); ?> <?= COMPANYNAME ?></p>
+				<p class="white tac fs12 pt10 pb10 bg-black">&copy;<?php echo date('Y'); ?> <?= COMPANYNAME ?></p>
 			</footer>
 		</div>
 	</div>
@@ -95,11 +90,51 @@
 			}
 		});
 	</script>
+	<script>
+		let planSwiper = null;
+		const mediaQuery = window.matchMedia('(max-width: 600px)');
+
+		const checkBreakpoint = (e) => {
+			if (e.matches) {
+				initSwiper();
+			} else if (planSwiper) {
+				planSwiper.destroy(false, true);
+			}
+		}
+
+		const initSwiper = () => {
+			planSwiper = new Swiper('.respSlider .swiper-a', {
+				slidesPerView: 1,
+				spaceBetween: 10,
+				loop: true,
+				loopAdditionalSlides: 3,
+				speed: 1000,
+				centeredSlides: true,
+			// autoplay: {
+			// 	delay: 4000,
+			// 	disableOnInteraction: false,
+			// },
+				grabCursor: true,
+				navigation: {
+					nextEl: '.card04 .swiper-a .swiper-button-next',
+					prevEl: '.card04 .swiper-a .swiper-button-prev',
+				},
+				breakpoints: {
+					600: {
+						slidesPerView: 1.5,
+					}
+				},
+			});
+		};
+
+		mediaQuery.addListener(checkBreakpoint);
+		checkBreakpoint(mediaQuery);
+	</script>
 <?php endif; ?>
 <?php get_template_part('script_common'); ?>
 <?php if(is_page('entry')): ?>
 	<script>
-		const div = document.querySelector('#mw_wp_form_mw-wp-form-20 form');
+		const div = document.querySelector('#mw_wp_form_mw-wp-form-16 form');
 		div.classList.add('h-adr');
 	</script>
 <?php endif; ?>

@@ -1,3 +1,19 @@
+svg {
+	.svg-check-1 {
+		stroke-dashoffset: 122.2989730834961px;
+		stroke-dasharray: 122.2989730834961px;
+		fill: transparent;
+		transition: stroke-dashoffset 0.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s,
+		fill 0.7s cubic-bezier(0.47, 0, 0.745, 0.715) 0.8s;
+	}
+	&.is-active{
+		.svg-check-1 {
+			stroke-dashoffset: 0;
+			fill: $main-color;
+		}
+	}
+} 
+
 .text-white-shadow{
 	text-shadow: 0 -1px 7px rgba(255,255,255,0.3),0 1px 7px rgba(255,255,255,0.3),1px 0px 7px rgba(255,255,255,0.3),-1px 0px 7px rgba(255,255,255,0.3);
 }
@@ -70,7 +86,7 @@
 	}
 }
 .logo{
-	max-width: 50%;
+	max-width: 40%;
 }
 .g-navi{
 	width: 100%;
@@ -111,7 +127,6 @@
 		-webkit-font-smoothing: antialiased;
 		&::before{
 			content: "\f0da";
-			color: white;
 			margin-right: 5px;
 		}
 	}
@@ -130,12 +145,12 @@
 			}
 		}
 	}
-	a{
-		color: white;
-		&:hover{
-			color: $accent-color;
-		}
-	}
+	// a{
+	// 	color: white;
+	// 	&:hover{
+	// 		color: $accent-color;
+	// 	}
+	// }
 }
 // .box-mv{
 // 	position: relative;
@@ -198,8 +213,8 @@
 	&:before{
 		content: '';
 		@media #{$pc} {
-			background: url(/img/w3000xh1000-recruit-min.jpg) 50% 50%;
-			background: url(/img/w3000xh1000-recruit-min.webp) 50% 50%;
+			background: url(/img/w3000xh1500-recruit-mv2.jpg) 50% 50%;
+			// background: url(/img/w3000xh1500-recruit-min.webp) 50% 50%;
 			background-size: cover;
 		}
 		@media #{$tab} {
@@ -305,8 +320,20 @@
 		
 		
 		@media #{$sp} {
-			width: 100%;
-			margin-right: 0;
+			&:nth-child(1),
+			&:nth-child(2),
+			&:nth-child(3),
+			&:nth-child(4),
+			&:nth-child(5),
+			&:nth-child(6),
+			&:nth-child(7),
+			&:nth-child(8),
+			&:nth-child(9),
+			&:nth-child(10),
+			&:nth-child(11){
+				width: 100%;
+				margin-right: 0;
+			}
 		}
 		margin-bottom: 3vw;
 		img{
@@ -316,29 +343,29 @@
 		}
 	}
 }
-// .right-out{
-// 	overflow: hidden;
-// 	position: absolute;
-// 	top: 0;
-// 	right: 0;
-// 	transform: translateY(0%) translateX(5%);
-// 	z-index: 0;
-// 	width: 50%;
-// 	figure{
-// 		margin-top: 2vw;
-// 		margin-right: 2vw;
-// 	}
-// 	@media #{$sp} {
-// 		position: relative;
-// 		width: 100%;
-// 		left: 0;
-// 		transform: translateY(0%) translateX(0%);
-// 		figure{
-// 			margin-top: 0;
-// 			margin-right: 0;
-// 		}
-// 	}
-// }
+.right-out{
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translateY(0%) translateX(5%);
+	z-index: 0;
+	width: 45%;
+	figure{
+		margin-top: 2vw;
+		margin-right: 2vw;
+	}
+	@media #{$sp} {
+		position: relative;
+		width: 100%;
+		left: 0;
+		transform: translateY(0%) translateX(0%);
+		figure{
+			margin-top: 0;
+			margin-right: 0;
+		}
+	}
+}
 // .left-out{
 // 	overflow: hidden;
 // 	position: absolute;
@@ -358,14 +385,16 @@
 // 		transform: translateY(0%) translateX(0%);
 // 	}
 // }
-// .left-content{
-// 	margin-left: 10vw;
-// 	z-index: 2;
-// 	position: relative;
-// 	@media #{$tab} {
-// 		margin-right: 10vw;
-// 	}
-// }
+.left-content{
+	z-index: 2;
+	position: relative;
+	width: unquote("min(1200px, 95%)");
+	margin-right: auto;
+	margin-left: auto;
+	@media #{$tab} {
+		margin-right: 10vw;
+	}
+}
 // .right-content{
 // 	margin-right: 10vw;
 // 	z-index: 2;
@@ -374,6 +403,53 @@
 // 		margin-left: 10vw;
 // 	}
 // }
+.bg-matsuri{
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+	&:before{
+		content: '';
+		background: url(/img/w500xh1000-matsuri1.svg) no-repeat 50% 50%;
+		position: absolute;
+		top: 10vw;
+		bottom: 0;
+		left: 70vw;
+		right: -100vw;
+		background-size: contain;
+		z-index: -1;
+		height: 100vh;
+	}
+	&.is-active{
+		&:before{
+			animation: slideInRight 1.5s var(--easing) 1s forwards;
+		}
+	}
+	&:after{
+		content: '';
+		background: url(/img/w500xh1000-matsuri2.svg) no-repeat 50% 50%;
+		position: absolute;
+		top: 10vw;
+		bottom: 0;
+		left: -100vw;
+		right: 70vw;
+		background-size: contain;
+		z-index: -1;
+		height: 100vh;
+	}
+	&.is-active{
+		&:after{
+			animation: slideInLeft 1.5s var(--easing) 1s forwards;
+		}
+	}
+}
+@keyframes slideInRight {
+	0% {right: -100vw;}
+	100% {right: 0;}
+}
+@keyframes slideInLeft {
+	0% {left: -100vw;}
+	100% {left: 0;}
+}
 .bg-recruit{
 	position: relative;
 	overflow: hidden;
@@ -399,13 +475,28 @@
 	}
 }
 .bg-contact{
-	background: url(/img/w3000xh2000-mv.svg) no-repeat 50% 50%;
-	background-size: cover;
+	background: $main-color;
+	background:linear-gradient(45deg, $main-color,$sub-color,$main-color);
+	background-size: 200% 200%;
+	animation: bggradient 20s ease infinite;
+
 	padding-top: 10vw;
 	padding-bottom: 10vw;
 }
+@keyframes bggradient{
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 .box-contact{
 	max-width: unquote("min(800px,90%)");
+	border-radius: 3rem;
 }
 .ttl-accent{
 	position: relative;

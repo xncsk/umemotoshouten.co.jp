@@ -5,8 +5,8 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdn.icomoon.io/53450/various/style.css?edwmg6">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://i.icomoon.io/public/e02a20845c/various/style.css">
 	<?php
 	if(is_page('entry')){
 		print '<script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>';
@@ -43,9 +43,9 @@
 					<div class="wrap df df-ai-center tab-db">
 						<div class="df df-ai-center df-nowrap mra tab-df-jc-between">
 							<a href="<?php echo home_url(); ?>" class="logo db mr10">
-								<figure><img src="/img/logo-yoko-posi.svg" alt="<?= COMPANYNAME ?>ロゴ"></figure>
+								<figure><img src="/img/logo-rec-posi.svg" alt="<?= COMPANYNAME ?>ロゴ"></figure>
 							</a>
-							<p class="fs14 black sp-dn">仕上がりに絶対の自信。<br>さいたま市のマンションリノベーション専門業者。</p>
+							<p class="fs14 black sp-dn">仕上がりに絶対の自信。<br>さいたま市のマンションリフォーム・リノベーション専門業者。</p>
 						</div>
 						<nav class="tab-span-12 tab-dn">
 							<ul class="g-navi df df-jc-end df-nowrap">

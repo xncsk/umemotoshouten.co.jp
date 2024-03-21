@@ -16,12 +16,12 @@ get_header();
 	</section>
 	<article id="main" role="main" itemprop="mainContentOfPage" class="mb10vw">
 		<section class="wrap section">
-			<header class="mb3vw wrap">
-				<h1 class="smoothText activeTriggerOnload h1 b df-jc-center"><?php the_title() ?></h1>
-				<p class="tac gray fadeUpOnload">ENTRY FORM</p>
+			<header class="mb5vw wrap">
+				<h1 class="smoothText activeTriggerOnload borderExtend border-left-extend h1"><?php the_title() ?></h1>
+				<p class="gray fadeUpOnload">ENTRY FORM</p>
 			</header>
 			<div class="span-9 center">
-				<?php echo do_shortcode('[mwform_formkey key="20"]'); ?>
+				<?php echo do_shortcode('[mwform_formkey key="16"]'); ?>
 			</div>
 		</section>
 	</article>

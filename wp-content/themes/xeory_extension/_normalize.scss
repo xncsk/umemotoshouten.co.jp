@@ -56,7 +56,7 @@ body{
 	word-break: normal ;
 	color: $text-color;
 	background: white;
-	overflow-x: hidden;
+	overflow-x: clip;
 }
 
 // a{

@@ -1,0 +1,64 @@
+.btn,
+.btn input{
+	position: relative;
+	text-decoration: none;
+	display: inline-block;
+	color:white;
+	padding: 10px 40px 10px 30px;
+	border-radius:25px;
+	text-align: center;
+	outline: none;
+	transition: ease .2s;
+	box-shadow: $box-shadow;
+	border: 0;
+	&.is-main,
+	&.is-main input{
+		background:$main-color;
+		&:hover{
+			color:white;
+			background:$text-color;
+		}
+	}
+	&.is-gray{
+		background:$bg-gray;
+		&:hover{
+			color:white;
+			background:$text-color;
+		}
+	}
+	
+}
+
+.btnarrow{
+	&::after{
+		content: '';
+		position: absolute;
+		top: 50%;
+		right: 13px;
+		width: 5px;
+		height: 5px;
+		border-top: 2px solid white;
+		border-right: 2px solid white;
+		transform: translateY(-50%) rotate(45deg);
+		transition: all .3s;
+	}
+	&:hover{
+		&::after{
+			animation: arrowrotate .3s;
+		}
+	}
+}
+
+
+@keyframes arrowrotate {
+	100% {
+		transform: translateY(-50%) rotate(360deg);
+	}
+}
+
+.mw_wp_form{
+	.btn{
+		padding: 0;
+		border:0;
+	}
+}

@@ -2,7 +2,7 @@
 	<tbody>
 		<tr>
 			<th class="span-3 tab-span-4 tal">応募職種</th>
-			<td>[mwform_radio name="jobtype" children="内装職人" value="内装職人"]</td>
+			<td>[mwform_radio name="jobtype" children="施工管理,多能工" value="施工管理"]</td>
 		</tr>
 		<tr>
 			<th class="tal">お名前<span class="label bg-red ml5">必須</span></th>
@@ -45,7 +45,7 @@
 		<tr>
 			<th class="tal">住所<span class="label bg-red ml5">必須</span></th>
 			<td>
-				<div class="mb10"><span class="p-country-name" style="display:none;">Japan</span>[mwform_zip name="zipcode" class="p-postal-code" conv_half_alphanumeric="true"]</div>
+				<div class="mb10"><span class="p-country-name">Japan</span>[mwform_zip name="zipcode" class="p-postal-code" conv_half_alphanumeric="true"]</div>
 				<div class="df df-jc-between">
 					<div class="span-6 tab-mb10">[mwform_text name="address" class="p-region p-locality p-street-address p-extended-address" placeholder="○○県○○市○○1-1-1"]</div>
 					<div class="span-6">[mwform_text name="building" placeholder="建物名"]</div>
@@ -75,6 +75,6 @@
 	</tbody>
 </table>
 <div class="tac mb50">
-	<div class="btn bgleft-gray dib">[mwform_backButton value="修正する"]</div>&nbsp;&nbsp;
-	<div class="btn bgleft-accent dib">[mwform_submitButton confirm_value="確認画面へ" submit_value="送信する" id="blue"]</div>
+	<div class="btn btnarrow is-gray dib">[mwform_backButton value="修正する"]</div>&nbsp;&nbsp;
+	<div class="btn btnarrow is-main dib">[mwform_submitButton confirm_value="確認画面へ" submit_value="送信する" id="blue"]</div>
 </div>

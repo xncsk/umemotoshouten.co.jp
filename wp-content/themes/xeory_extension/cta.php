@@ -3,18 +3,16 @@
 		<header class="mb30">
 			<h2 class="smoothText activeTrigger df-jc-center h2 fs5vw">CONTACT</h2>
 		</header>
-		<p class="lh20 mb20 tac sp-tal"><span class="b"><?= COMPANYNAME ?></span>へのお問い合わせは、<br>お気軽にお電話ください。</p>			
-		<div class="mb30 pb30 bb">
-			<?php if(wp_is_mobile()): ?>
-				<div class="tab-mb10 tac">
-					<a href="tel:<?= TEL ?>" class="btn bgleft-main">
-						<div class="df df-ai-center df-nowrap"><span class="i-mobile mr5"></span><span>電話する</span></div>
-					</a>
-				</div>
-			<?php else: ?>
-				<div class="df df-ai-baseline df-jc-center df-nowrap mb30"><span class="fs2vw i-phone mr5"></span><span class="fs4vw b"><?= TEL ?></span></div>
-			<?php endif; ?>
-			<div class="df df-jc-center"><span class="label label-big bg-black mr5">営業時間</span><time><?= STARTTIME ?></time>〜<time class="mr10"><?= ENDTIME ?></time></div>
+		<p class="lh20 mb5vw tac sp-tal">マンションリフォーム・リノベーションに関するお悩みごとが<br>ございましたら、お気軽にお問合せください。</p>
+		<div class="tac df df-ai-baseline df-jc-center">
+			<span class="i-telcircle mr5 fs3vw"></span><span class="fs5vw b"><?= TEL ?></span>
 		</div>
+		<?php
+		/*
+		<div class="tac mb10">
+			<a href="/contact/" class="btn btnarrow is-main">お問い合わせ</a>
+		</div>
+		*/
+		?>
 	</div>
 </section>

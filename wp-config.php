@@ -62,11 +62,11 @@ define( 'COMPANYNAME', '株式会社梅本商店');
 define( 'ZIPCODE', '〒337-0033');
 define( 'ADDRESS', '埼玉県さいたま市見沼区御蔵19-77');
 define( 'DAIHYONAME', '梅本 和史');
-define( 'TEL', '048−627-7539');
-// define( 'MOBILE', '090−6924-6498');
-define( 'FAX', '048−627-7539');
+define( 'TEL', '048-627-7539');
+define( 'INVOICE', 'T7030001154323');
+define( 'FAX', '048-627-7539');
 define( 'STARTTIME', '9:00');
-define( 'ENDTIME', '18:00');
+define( 'ENDTIME', '17:00');
 /**#@-*/
 
 /**
