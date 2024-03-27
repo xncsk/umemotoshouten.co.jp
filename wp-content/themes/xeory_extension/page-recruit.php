@@ -7,7 +7,13 @@ get_header();
 <div id="content" class="content">
 	<section class="box-mv-recruit">
 		<header class="text-mv-recruit su-color">
-			<h1 class="font-noto-serif mb3vw lh12"><span class="fs5vw">ハンパないっ！</span><br><span class="fs5vw">この</span><span class="fs10vw ls2vw">達成感。</span></h1>
+			<?php
+			/*
+			<h1 class="font-noto-serif mb3vw lh12"><span class="fs5vw">ハンパないっ！</span><br><span class="fs5vw">この</span><span class="fs10vw sp-fs23vw ls2vw">達成感。</span></h1>
+			*/
+			?>
+			<h1 class="font-noto-serif mb3vw lh12"><span class="fs5vw">自分の手で、</span><br><span class="fs5vw">街の</span><span class="fs10vw sp-fs15vw main-color">景色</span><span class="fs5vw">を<br class="sp-dn"></span><span class="fs10vw sp-fs15vw main-color">変える</span><span class="fs5vw">仕事</span></h1>
+			
 			<p class="font-noto-serif fs2vw sp-dn">この仕事の達成感を味わえるのは、<?= COMPANYNAME ?>！</p>
 		</header>
 	</section>
@@ -23,13 +29,13 @@ get_header();
 	<article id="main" role="main" itemprop="mainContentOfPage" class="mb10vw">
 		<section class="section font-noto-serif bg-matsuri activeTrigger">
 			<header class="vertical-text center mb10vw">
-				<h2 class="ws-nowrap fade-in fade-in-up"><span class="fs6vw">仕事</span><span class="fs5vw">は</span><span class="fs6vw">祭り！</span></h2>
+				<h2 class="ws-nowrap fade-in fade-in-up"><span class="fs6vw sp-fs15vw">仕事</span><span class="fs5vw sp-fs9vw">は</span><span class="fs6vw sp-fs15vw">祭り！</span></h2>
 			</header>
-			<div class="tac lh3 fs2vw">
-				<p>私たちは、仕事を祭りのように、<br>活気と情熱にあふれた時間と捉えています。</p>
-				<p>新しいプロジェクトはまるでお祭りの準備のよう。<br>チーム全体で協力し、一丸となって素晴らしい出来事を創り出す。</p>
-				<p>そして、完成したプロジェクトをお披露目する時は、<br>まるでお祭りのクライマックスのような喜びが広がります。</p>
-				<p>仕事を通じて、新しい出会いや感動を経験し、成長していく。<br>それが当社の仕事の楽しみ方です。</p>
+			<div class="wrap tac sp-tal lh3 sp-lh16 fs2vw">
+				<p>私たちは、仕事を祭りのように、<br class="sp-dn">活気と情熱にあふれた時間と捉えています。</p>
+				<p>新しいプロジェクトはまるでお祭りの準備のよう。<br class="sp-dn">チーム全体で協力し、一丸となって素晴らしい出来事を創り出す。</p>
+				<p>そして、完成したプロジェクトをお披露目する時は、<br class="sp-dn">まるでお祭りのクライマックスのような喜びが広がります。</p>
+				<p>仕事を通じて、新しい出会いや感動を経験し、成長していく。<br class="sp-dn">それが当社の仕事の楽しみ方です。</p>
 			</div>
 		</section>
 		<section class="section bg-gray">
@@ -40,21 +46,21 @@ get_header();
 			<div class="relative">
 				<div class="left-content">
 					<ul class="read-text font-noto-serif">
-						<li class="df mb3vw">
+						<li class="df df-nowrap mb3vw">
 							<div class="mr10"><?php get_template_part('svg-check') ?></div>
 							<dl>
 								<dt class="fs3vw b lh1 mb10">熱意を持って仕事に取り組める方</dt>
 								<dd>情熱と責任感を持ち、常に向上心を持って仕事に取り組む方</dd>
 							</dl>
 						</li>
-						<li class="df mb3vw">
+						<li class="df df-nowrap mb3vw">
 							<div class="mr10"><?php get_template_part('svg-check') ?></div>
 							<dl>
 								<dt class="fs3vw b lh1 mb10">責任感を持って取り組める方</dt>
 								<dd>確かな責任感を持ち、仕事に真摯に向き合う方</dd>
 							</dl>
 						</li>
-						<li class="df">
+						<li class="df df-nowrap">
 							<div class="mr10"><?php get_template_part('svg-check') ?></div>
 							<dl>
 								<dt class="fs3vw b lh1 mb10">常に向上心を持ち、成長を求める方</dt>

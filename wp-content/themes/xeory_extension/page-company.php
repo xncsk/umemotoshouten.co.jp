@@ -31,7 +31,7 @@ get_header();
 					<table class="table table-border table-responsive-tr-block sp-table-th-main">
 						<tbody>
 							<tr>
-								<th class="span-4 tab-span-5 tal">運営会社</th>
+								<th class="span-4 tab-span-5 tal">会社名</th>
 								<td><?= COMPANYNAME ?></td>
 							</tr>
 							<tr>
@@ -47,21 +47,21 @@ get_header();
 								<td><?= TEL ?></td>
 							</tr>
 							<tr>
-								<th class="tal">適格請求書発行<br>事業者登録番号</th>
+								<th class="tal">適格請求書発行<br class="sp-dn">事業者登録番号</th>
 								<td><?= INVOICE ?></td>
 							</tr>
 							<tr>
 								<th class="tal">事業内容</th>
 								<td>
 									<ul>
-										<li>マンションのリフォーム工事の企画、設計、施工</li>
-										<li>マンションの内装工事、外装工事、設備工事</li>
-										<li>マンションの耐震補強工事、バリアフリー化工事</li>
-										<li>マンションのリノベーション、リメイク工事</li>
-										<li>マンションの建替え、増改築工事</li>
-										<li>マンションの維持管理サービス、アフターサポート</li>
-										<li>マンションのコンサルティング、アドバイザリーサービス</li>
-										<li>その他、マンションに関連するリフォーム・リノベーションに関する一切の事業</li>
+										<li>・マンションのリフォーム工事の企画、設計、施工</li>
+										<li>・マンションの内装工事、外装工事、設備工事</li>
+										<li>・マンションの耐震補強工事、バリアフリー化工事</li>
+										<li>・マンションのリノベーション、リメイク工事</li>
+										<li>・マンションの建替え、増改築工事</li>
+										<li>・マンションの維持管理サービス、アフターサポート</li>
+										<li>・マンションのコンサルティング、アドバイザリーサービス</li>
+										<li>・その他、マンションに関連するリフォーム・リノベーションに関する一切の事業</li>
 									</ul>
 								</td>
 							</tr>

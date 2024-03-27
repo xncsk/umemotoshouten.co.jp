@@ -76,6 +76,11 @@ svg {
 		.logo{
 			max-width: 150px;
 		}
+		@media #{$sp} {
+			.logo{
+				max-width: 40%;
+			}
+		}
 		.g-navi{
 			>li{
 				a{
@@ -213,18 +218,18 @@ svg {
 	&:before{
 		content: '';
 		@media #{$pc} {
-			background: url(/img/w3000xh1500-recruit-mv2.jpg) 50% 50%;
-			// background: url(/img/w3000xh1500-recruit-min.webp) 50% 50%;
+			background: url(/img/w3000xh1500-recruit-mv-min.jpg) 50% 50%;
+			background: url(/img/w3000xh1500-recruit-mv-min.webp) 50% 50%;
 			background-size: cover;
 		}
 		@media #{$tab} {
-			background: url(/img/w3000xh1000-recruit-min.jpg) 90% 50%;
-			background: url(/img/w3000xh1000-recruit-min.webp) 90% 50%;
+			background: url(/img/w1560xh1560-recruit-mv-min.jpg) 90% 50%;
+			background: url(/img/w1560xh1560-recruit-mv-min.webp) 90% 50%;
 			background-size: cover;
 		}
 		@media #{$sp} {
-			background: url(/img/w750xh1200-recruit-min.jpg) 50% 50%;
-			background: url(/img/w750xh1200-recruit-min.webp) 50% 50%;
+			background: url(/img/w750xh1200-recruit-mv-min.jpg) 50% 50%;
+			background: url(/img/w750xh1200-recruit-mv-min.webp) 50% 50%;
 			background-size: cover;
 		}
 		position: absolute;
@@ -249,8 +254,8 @@ svg {
 		writing-mode: vertical-rl;
 		white-space: nowrap;
 		top: 50%;
-		left: 50%;
-		transform: translateY(-50%) translateX(-50%);
+		left: 10%;
+		transform: translateY(-50%) translateX(-10%);
 	}
 }
 @keyframes fadeIn {
@@ -263,36 +268,36 @@ svg {
 		filter: blur(0);
 	}
 }
-.svg-circle {
-	transform: rotate(-90deg);
-	width: 100%;
-	height: 100%;
-	@media #{$sp} {
-		width: 60%;
-	}
-	circle {
-		fill: transparent;
-		&.dashed{
-			stroke-width: 1;
-			stroke: darken($gray-light, 30%);
-			stroke-dasharray: 3 3;
-		}
-		&.is-active{
-			stroke-dasharray: 1205;
-			stroke-width: 3;
-			stroke-dasharray: 1205;
-			stroke-dashoffset: 0;
-			stroke: $bg-gray;
-			animation: circle 2s forwards;
-		}
-	}
-}
+// .svg-circle {
+// 	transform: rotate(-90deg);
+// 	width: 100%;
+// 	height: 100%;
+// 	@media #{$sp} {
+// 		width: 60%;
+// 	}
+// 	circle {
+// 		fill: transparent;
+// 		&.dashed{
+// 			stroke-width: 1;
+// 			stroke: darken($gray-light, 30%);
+// 			stroke-dasharray: 3 3;
+// 		}
+// 		&.is-active{
+// 			stroke-dasharray: 1205;
+// 			stroke-width: 3;
+// 			stroke-dasharray: 1205;
+// 			stroke-dashoffset: 0;
+// 			stroke: $bg-gray;
+// 			animation: circle 2s forwards;
+// 		}
+// 	}
+// }
 
-@keyframes circle {
-	to {
-        stroke-dashoffset: 1205
-    }
-}
+// @keyframes circle {
+// 	to {
+// 		stroke-dashoffset: 1205
+// 	}
+// }
 .li-service{
 	>li{
 		&:nth-child(1),
@@ -392,7 +397,9 @@ svg {
 	margin-right: auto;
 	margin-left: auto;
 	@media #{$tab} {
+		width: calc(100% - 12vw);
 		margin-right: 10vw;
+		margin-left: 6vw;
 	}
 }
 // .right-content{
@@ -407,37 +414,43 @@ svg {
 	position: relative;
 	overflow: hidden;
 	z-index: 0;
-	&:before{
+	&::before{
 		content: '';
 		background: url(/img/w500xh1000-matsuri1.svg) no-repeat 50% 50%;
 		position: absolute;
 		top: 10vw;
-		bottom: 0;
+		// bottom: 0;
 		left: 70vw;
 		right: -100vw;
 		background-size: contain;
 		z-index: -1;
 		height: 100vh;
 	}
-	&.is-active{
-		&:before{
-			animation: slideInRight 1.5s var(--easing) 1s forwards;
-		}
-	}
-	&:after{
+	&::after{
 		content: '';
 		background: url(/img/w500xh1000-matsuri2.svg) no-repeat 50% 50%;
 		position: absolute;
 		top: 10vw;
-		bottom: 0;
+		// bottom: 0;
 		left: -100vw;
 		right: 70vw;
 		background-size: contain;
 		z-index: -1;
 		height: 100vh;
 	}
+	@media #{$sp} {
+		&::after,
+		&::before{
+			background-position: 50% 0%;
+			height: 60vh;
+		}
+		
+	}
 	&.is-active{
-		&:after{
+		&::before{
+			animation: slideInRight 1.5s var(--easing) 1s forwards;
+		}
+		&::after{
 			animation: slideInLeft 1.5s var(--easing) 1s forwards;
 		}
 	}
@@ -456,7 +469,7 @@ svg {
 	z-index: 0;
 	// height: 100vh;
 	border-bottom: 5px solid white;
-	&:before{
+	&::before{
 		content: '';
 		background: url(/img/w3000xh1500-recruit.jpg) no-repeat 50% 50%;
 		position: absolute;
@@ -469,7 +482,7 @@ svg {
 		z-index: -1;
 	}
 	&.is-active{
-		&:before{
+		&::before{
 			animation: blur-delay 1.5s ease-in 1s forwards;
 		}
 	}

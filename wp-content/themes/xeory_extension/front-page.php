@@ -44,7 +44,7 @@
 <section class="section">
 		<header class="mb5vw wrap">
 			<h2 class="smoothText activeTrigger h2 borderLeftTrigger">SERIVCE</h2>
-			<p class="gray fade-in fade-in-up"><?= COMPANYNAME ?>は、マンションリフォームやリノベーションを主軸とし、<br>新たな展開に果敢に挑戦するチャレンジングカンパニーです。</p>
+			<p class="gray fade-in fade-in-up"><?= COMPANYNAME ?>は、マンションリフォームやリノベーションを主軸とし、<br class="sp-dn">新たな展開に果敢に挑戦するチャレンジングカンパニーです。</p>
 		</header>
 		<?php
 		/*

@@ -144,6 +144,7 @@
 	.sp-fs9vw{font-size: 9vw}
 	.sp-fs10vw{font-size: 10vw}
 	.sp-fs15vw{font-size: 15vw}
+	.sp-lh16{line-height: 1.6}
 	.sp-dn{display: none;}
 	.sp-span-1 { width: 6.5% }
 	.sp-span-2 { width: 15.0% }
@@ -158,30 +159,23 @@
 	.sp-span-11 { width: 91.5% }
 	.sp-span-12 { width: 100% }
 	.breadcrumb-box{
-		// background: $bg-gray;
 		overflow-x: scroll;
-		text-align: right;
-		direction: rtl;
-		// margin-right: 15px;
-		// margin-left: 15px;
+		// text-align: right;
+		// direction: rtl;
 		padding-right: 0;
 		padding-left: 0;
 		border-radius: 4px;
 		margin-bottom: 15px;
-		// border: 1px solid $border-color;
-		// box-shadow: $box-shadow inset;
 	}
 	.breadcrumb-global{
 		background: initial;
 		padding: 0 7px;
-		// border: solid 1px $border-color;
-		// border-radius: 4px;
-		display: table;
-		direction: ltr;
+		// display: table;
+		// direction: ltr;
 		width: 100%;
-		li{
-			width: 100%;
-		}
+		// li{
+		// 	width: 100%;
+		// }
 	}
 	// .table{
 	// 	th,td{

@@ -91,19 +91,19 @@
 		});
 	</script>
 	<script>
-		let planSwiper = null;
+		let serviceSwiper = null;
 		const mediaQuery = window.matchMedia('(max-width: 600px)');
 
 		const checkBreakpoint = (e) => {
 			if (e.matches) {
 				initSwiper();
-			} else if (planSwiper) {
-				planSwiper.destroy(false, true);
+			} else if (serviceSwiper) {
+				serviceSwiper.destroy(false, true);
 			}
 		}
 
 		const initSwiper = () => {
-			planSwiper = new Swiper('.respSlider .swiper-a', {
+			serviceSwiper = new Swiper('.respSlider .swiper-a', {
 				slidesPerView: 1,
 				spaceBetween: 10,
 				loop: true,
@@ -116,8 +116,8 @@
 			// },
 				grabCursor: true,
 				navigation: {
-					nextEl: '.card04 .swiper-a .swiper-button-next',
-					prevEl: '.card04 .swiper-a .swiper-button-prev',
+					nextEl: '.respSlider .swiper-a .swiper-button-next',
+					prevEl: '.respSlider .swiper-a .swiper-button-prev',
 				},
 				breakpoints: {
 					600: {
