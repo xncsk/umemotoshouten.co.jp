@@ -74,22 +74,17 @@ get_header();
 				<div class="right-out">
 					<div class="fade-in fade-in-right m3 sp-m0">
 						<figure class="tac box-shadow">
-							<img src="/img/w1600xh1200-recruit-min.jpg" alt="<?= COMPANYNAME ?>求人">
-							<?php
-							/*
 							<picture>
-								<source srcset="/img/w1500xh1000-recruit-min.webp" type="image/webp">
-								<img src="/img/w3000xh1500-recruit.jpg" alt="<?= COMPANYNAME ?>求人">
+								<source srcset="/img/w1600xh1200-recruit-min.webp" type="image/webp">
+								<img src="/img/w1600xh1200-recruit-min.jpg" alt="<?= COMPANYNAME ?>求人">
 							</picture>
-							*/
-							?>
 						</figure>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section class="section">
-			<p class="font-noto-serif tac fw700 mb10vw mt10vw fade-in fade-in-down"><span class="main-color fs6vw">スキル</span><span class="fs5vw">を活かし、<br>さらなる</span><span class="main-color fs6vw">飛躍</span><span class="fs5vw">を。</span></p>
+			<p class="font-noto-serif tac fw700 mb10vw mt10vw fade-in fade-in-down"><span class="main-color fs6vw sp-fs10vw">スキル</span><span class="fs5vw sp-fs7vw">を活かし、</span><br><span class="fs5vw sp-fs7vw">さらなる</span><span class="main-color fs6vw sp-fs10vw">飛躍</span><span class="fs5vw sp-fs7vw">を。</span></p>
 			<div class="wrap">
 				<header class="mb5vw">
 					<h2 class="smoothText activeTrigger h2 borderLeftTrigger">募集要項</h2>

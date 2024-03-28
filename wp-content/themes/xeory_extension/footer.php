@@ -9,7 +9,7 @@
 									<p><?= ZIPCODE ?>&nbsp;<?= ADDRESS ?></p>
 									<div class="df df-ai-center">
 										<dl class="fs0 df df-ai-center df-nowrap mr10">
-											<dt class="label bg-accent mr5">TEL</dt>
+											<dt class="label bg-accent mr5">TEL & FAX</dt>
 											<dd class="fs16"><?= TEL ?></dd>
 										</dl>
 									</div>
