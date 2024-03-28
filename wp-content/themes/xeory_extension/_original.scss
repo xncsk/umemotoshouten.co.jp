@@ -416,23 +416,39 @@ svg {
 	z-index: 0;
 	&::before{
 		content: '';
-		background: url(/img/w500xh1000-matsuri1.svg) no-repeat 50% 50%;
+		@media #{$pc} {
+			background: url(/img/w500xh1000-matsuri1.svg) no-repeat 50% 0;
+		}
+		@media #{$tab} {
+			background: url(/img/w500xh1000-matsuri1.svg) no-repeat 50% 0;
+		}
+		@media #{$sp} {
+			background: url(/img/w500xh1000-matsuri1-sp.svg) no-repeat 50% 0;
+		}
 		position: absolute;
-		top: 10vw;
+		top: 0;
 		// bottom: 0;
 		left: 70vw;
-		right: -100vw;
+		right: -70vw;
 		background-size: contain;
 		z-index: -1;
 		height: 100vh;
 	}
 	&::after{
 		content: '';
-		background: url(/img/w500xh1000-matsuri2.svg) no-repeat 50% 50%;
+		@media #{$pc} {
+			background: url(/img/w500xh1000-matsuri2.svg) no-repeat 50% 0;
+		}
+		@media #{$tab} {
+			background: url(/img/w500xh1000-matsuri2.svg) no-repeat 50% 0;
+		}
+		@media #{$sp} {
+			background: url(/img/w500xh1000-matsuri2-sp.svg) no-repeat 50% 0;
+		}
 		position: absolute;
-		top: 10vw;
+		top: 0;
 		// bottom: 0;
-		left: -100vw;
+		left: -70vw;
 		right: 70vw;
 		background-size: contain;
 		z-index: -1;
@@ -442,16 +458,17 @@ svg {
 		&::after,
 		&::before{
 			background-position: 50% 0%;
-			height: 60vh;
+			// height: 50vh;
+			background-size: auto;
 		}
 		
 	}
 	&.is-active{
 		&::before{
-			animation: slideInRight 1.5s var(--easing) 1s forwards;
+			animation: slideInRight 1.5s ease-in-out .2s forwards;
 		}
 		&::after{
-			animation: slideInLeft 1.5s var(--easing) 1s forwards;
+			animation: slideInLeft 1.5s ease-in-out .2s forwards;
 		}
 	}
 }
