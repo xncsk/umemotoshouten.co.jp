@@ -74,7 +74,7 @@ get_header();
 				<div class="right-out">
 					<div class="fade-in fade-in-right m3 sp-m0">
 						<figure class="tac box-shadow">
-							<img src="/img/w1600xh1200-recruit.jpg" alt="<?= COMPANYNAME ?>求人">
+							<img src="/img/w1600xh1200-recruit-min.jpg" alt="<?= COMPANYNAME ?>求人">
 							<?php
 							/*
 							<picture>
