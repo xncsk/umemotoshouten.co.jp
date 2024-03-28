@@ -482,7 +482,9 @@ svg {
 		z-index: -1;
 	}
 	@media #{$sp} {
-		background-attachment: scroll;
+		&::before{
+			background-attachment: scroll;
+		}
 	}
 	// &.is-active{
 	// 	&::before{
