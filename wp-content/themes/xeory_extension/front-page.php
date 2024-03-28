@@ -221,7 +221,7 @@
 			</div>
 		</div>
 </section>
-<section class="section ovh bg-recruit ctiveTrigger">
+<section class="section ovh bg-recruit">
 	<div class="wrap">
 		<header class="mb5vw">
 			<h2 class="smoothText activeTrigger h2 borderRightTrigger">RECRUIT</h2>
@@ -231,7 +231,7 @@
 			<div class="df df-jc-end fade-in fade-in-up">
 				<div class="span-5 p4vw bg-white-alpha">
 					<div class="read-text mb20">
-						<p><?= COMPANYNAME ?>では、一緒に働く仲間を募集しています。マンションリフォームのプロフェッショナルとして、経験豊富な方はもちろん、意欲的な未経験の方も大歓迎致します。我々は、高品質なサービスとお客様の満足度を追求するために、チームワークを重視しています。安定した環境で成長したい方、やりがいを感じながら働きたい方、ぜひご応募ください。キャリアの一翼を担うチャンスを提供します。</p>
+						<p><?= COMPANYNAME ?>では、一緒に働く仲間を募集しています。マンションリフォームのプロフェッショナルとして、経験豊富な方はもちろん、<span class="marker">意欲的な未経験の方</span>も大歓迎致します。我々は、高品質なサービスとお客様の満足度を追求するために、チームワークを重視しています。安定した環境で成長したい方、やりがいを感じながら働きたい方、ぜひご応募ください。キャリアの一翼を担うチャンスを提供します。</p>
 					</div>
 					<div class="tar"><a href="/recruit/" class="textlinkstretch fade-in fade-in-left"><span>求人情報</span></a></div>
 				</div>

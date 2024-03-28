@@ -471,7 +471,7 @@ svg {
 	border-bottom: 5px solid white;
 	&::before{
 		content: '';
-		background: url(/img/w3000xh1500-recruit.jpg) no-repeat 50% 50%;
+		background: url(/img/w3000xh1500-recruit-min.jpg) no-repeat 50% 50%;
 		position: absolute;
 		top: -5px;
 		bottom: -5px;
@@ -484,11 +484,11 @@ svg {
 	@media #{$sp} {
 		background-attachment: scroll;
 	}
-	&.is-active{
-		&::before{
-			animation: blur-delay 1.5s ease-in 1s forwards;
-		}
-	}
+	// &.is-active{
+	// 	&::before{
+	// 		animation: blur-delay 1.5s ease-in 1s forwards;
+	// 	}
+	// }
 }
 .bg-contact{
 	background: $main-color;
