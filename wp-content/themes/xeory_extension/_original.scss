@@ -481,6 +481,9 @@ svg {
 		background-attachment: fixed;
 		z-index: -1;
 	}
+	@media #{$sp} {
+		background-attachment: scroll;
+	}
 	&.is-active{
 		&::before{
 			animation: blur-delay 1.5s ease-in 1s forwards;
