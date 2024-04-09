@@ -179,7 +179,7 @@
 		line-height: 1.4;
 		font-weight: bold;
 		@media #{$sp} {
-			display: flex;
+			// display: flex;
 			align-items: center;
 			writing-mode: vertical-rl;
 			font-feature-settings: "palt";
