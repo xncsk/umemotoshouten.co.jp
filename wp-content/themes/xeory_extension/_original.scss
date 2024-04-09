@@ -90,8 +90,10 @@ svg {
 		}
 	}
 }
-.logo{
-	max-width: 40%;
+.logo{max-width: 40%;}
+.logo-box-footer{
+	max-width: 210px;
+	margin-left: auto;
 }
 .g-navi{
 	width: 100%;
@@ -202,14 +204,14 @@ svg {
 // 		filter: blur(0);
 // 	}
 // }
-@keyframes blur-delay {
-	0%{
-		filter: blur(0) opacity(100%);
-	}
-	100%{
-		filter: blur(3px) opacity(50%);
-	}
-}
+// @keyframes blur-delay {
+// 	0%{
+// 		filter: blur(0) opacity(100%);
+// 	}
+// 	100%{
+// 		filter: blur(3px) opacity(50%);
+// 	}
+// }
 .box-mv-recruit{
 	position: relative;
 	overflow: hidden;
@@ -410,6 +412,10 @@ svg {
 // 		margin-left: 10vw;
 // 	}
 // }
+.bg-grad{
+	background: linear-gradient(white 65%, lighten($main-color, 30%) 99.9%, $main-color);
+
+}
 .bg-matsuri{
 	position: relative;
 	overflow: hidden;
@@ -531,7 +537,7 @@ svg {
 }
 .box-contact{
 	max-width: unquote("min(800px,90%)");
-	border-radius: 3rem;
+	border-radius: 3vw;
 }
 .ttl-accent{
 	position: relative;

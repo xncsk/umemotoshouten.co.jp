@@ -2,27 +2,21 @@
 			<footer id="footer" class="footer bg-gray">
 				<div class="wrap pv3vw">
 					<div class="df df-jc-between">
-						<div class="span-4 tab-mb30">
-							<dl>
-								<dt class="fs20 b"><?= COMPANYNAME ?></dt>
-								<dd>
-									<p><?= ZIPCODE ?>&nbsp;<?= ADDRESS ?></p>
-									<div class="df df-ai-center">
-										<dl class="fs0 df df-ai-center df-nowrap mr10">
-											<dt class="label bg-accent mr5">TEL & FAX</dt>
-											<dd class="fs16"><?= TEL ?></dd>
-										</dl>
-									</div>
-								</dd>
-							</dl>
-						</div>
 						<div class="span-8">
 							<nav class="mb10">
-								<ul class="f-navi df df-jc-end tab-df-jc-center sp-df-jc-start">
+								<ul class="f-navi df">
 									<?php get_template_part('part-gnav') ?>
 									<li><a href="/privacy-policy/">プライバシーポリシー</a></li>
 								</ul>
 							</nav>
+						</div>
+						<div class="span-4 tab-mb30">
+							<figure class="logo-box-footer"><img src="/img/logo-rec-posi.svg" alt="<?= COMPANYNAME ?>ロゴ"></figure>
+							<p class="tar"><?= ZIPCODE ?><br><?= ADDRESS ?></p>
+							<dl class="fs0 df df-ai-center df-nowrap df-jc-end">
+								<dt class="label bg-accent mr5">TEL & FAX</dt>
+								<dd class="fs16"><?= TEL ?></dd>
+							</dl>
 						</div>
 					</div>
 				</div>
@@ -38,7 +32,7 @@
 <?php if(is_home() || is_front_page()): ?>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script>
-		const myDelay = 7000;
+		const myDelay = 5000;
 		let timer;
 		const switchAnimation = () => {
 			clearTimeout(timer);
@@ -67,13 +61,14 @@
 			fadeEffect: {
 				crossFade: true,
 			},
-			loop: true,
+			loop: false,
 			loopAdditionalSlides: 1,
 			speed: 2000,
 			autoplay: {
 				delay: myDelay,
 				disableOnInteraction: false,
 				waitForTransition: false,
+				stopOnLastSlide: true,
 			},
 			followFinger: false,
 			pagination: {
@@ -108,7 +103,7 @@
 				spaceBetween: 10,
 				loop: true,
 				loopAdditionalSlides: 3,
-				speed: 1000,
+				speed: 500,
 				centeredSlides: true,
 			// autoplay: {
 			// 	delay: 4000,
@@ -129,6 +124,13 @@
 
 		mediaQuery.addListener(checkBreakpoint);
 		checkBreakpoint(mediaQuery);
+	</script>
+	<script>
+		$(document).ready(function() {
+			setTimeout(function() {
+				$(".js-appear").css("display", "block");
+			}, myDelay * 3);
+		});
 	</script>
 <?php endif; ?>
 <?php get_template_part('script_common'); ?>

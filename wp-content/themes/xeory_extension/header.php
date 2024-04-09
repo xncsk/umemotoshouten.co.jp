@@ -32,12 +32,12 @@
 		<input type="checkbox" id="pure-toggle-right" class="pure-toggle" data-toggle="right"/>
 		<label class="pure-toggle-label pc-dn" for="pure-toggle-right" data-toggle-label="right"><span class="pure-toggle-icon"></span><span class="pure-toggle-text">MENU</span></label>
 		<nav class="pure-drawer" data-position="right">
-			<a href="<?php echo esc_url(home_url()); ?>"><figure class="sp-span-8 center mb30"><img src="/img/logo-yoko-nega.svg" alt="<?= COMPANYNAME ?>ロゴ"></figure></a>
+			<a href="<?php echo esc_url(home_url()); ?>"><figure class="sp-span-8 center mb30"><img src="/img/logo-rec-posi.svg" alt="<?= COMPANYNAME ?>ロゴ"></figure></a>
 			<div class="gnav-container">
 				<div class="mb20">
-					<p class="fkds-slash is-white white mb10">お気軽にお電話ください。</p>
+					<p class="fkds-slash mb10">お気軽にお電話ください。</p>
 					<div class="tac">
-						<a href="tel:<?= TEL ?>" class="btn bgleft-accent">
+						<a href="tel:<?= TEL ?>" class="btn is-main btnarrow">
 							<span class="i-mobile mr5"></span><span>電話する</span>
 						</a>
 					</div>
@@ -56,7 +56,7 @@
 							<a href="<?php echo home_url(); ?>" class="logo db mr10">
 								<figure><img src="/img/logo-rec-posi.svg" alt="<?= COMPANYNAME ?>ロゴ"></figure>
 							</a>
-							<p class="fs14 black sp-dn">仕上がりに絶対の自信。<br>さいたま市のマンションリフォーム・リノベーション専門業者。</p>
+							<p class="fs14 black sp-dn lh12">さいたま市のマンションリフォーム<br>リノベーション専門業者。</p>
 						</div>
 						<nav class="tab-span-12 tab-dn">
 							<ul class="g-navi df df-jc-end df-nowrap">

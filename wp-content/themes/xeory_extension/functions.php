@@ -20,14 +20,15 @@ require_once('lib/functions/show_avatar.php');
 require_once('lib/functions/rss.php');
 require_once('lib/functions/category-custom-fields-ex.php');
 
-///author/**/をトップにリダイレクト
-function disable_author_archive_query() {
-	if( preg_match('/author=([0-9]*)/i', $_SERVER['QUERY_STRING']) ){
-		wp_redirect( home_url() );
-		exit;
+///author/**/を404
+function disable_author_archive( $query ){
+	if( !is_admin() && is_author() ){
+		$query->set_404();
+		status_header( 404 );
+		nocache_headers();
 	}
 }
-add_action('init', 'disable_author_archive_query');
+add_action( 'parse_query', 'disable_author_archive' );
 
 //オリジナル画像サイズをmax w1024に
 function otocon_resize_at_upload( $file ) {
