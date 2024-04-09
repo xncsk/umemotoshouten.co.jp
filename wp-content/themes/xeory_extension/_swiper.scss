@@ -171,7 +171,7 @@
 	.slide-title,
 	.slide-text,
 	.slide-link {
-		animation: 2s var(--easing) both;
+		animation: 20s var(--easing) both;
 		opacity: 0;
 	}
 	.slide-title {
@@ -256,90 +256,110 @@
 	0%{filter: blur(0) opacity(100%);}
 	100%{filter: blur(5px) opacity(30%);}
 }
-.card01{
-	.l-inner {
-		padding: 0 6vw;
+@keyframes mv02-fadeIn {
+	0% {
+		transform: translateX(6rem);
+		opacity: 0;
 	}
-	.swiper-area{
-		position: relative;
-	}
-	.slide-media{
-		padding-top: 62.5%;
-		border-radius: 4px;
-	}
-	.swiper-slide{
-		display: flex;
-		align-items: stretch;
-		height: initial;
-	}
-	.swiper-button-prev, .swiper-button-next {
-		display: grid;
-		place-content: center;
-		width: 60px;
-		height: 60px;
-		cursor: pointer;
-		transition: var(--transition);
-	}
-	.swiper-button-prev,
-	.swiper-button-next{
-		position: absolute;
-		z-index: 1;
-		top: 0;
-		bottom: 0;
-		margin: auto;
-		&::before{
-			background-color: $main-color;
-			box-shadow: $box-shadow;
-		}
-	}
-	.swiper-button-disabled {
-		&::before{
-			background-color: $gray-light;
-		}
-	}
-	.swiper-button-next{
-		right: -80px;
-		@media #{$tab} {
-			right: -50px;
-		}
-		@media #{$sp} {
-			right: -30px;
-		}
-	}
-	.swiper-button-prev{
-		left: -80px;
-		@media #{$tab} {
-			left: -50px;
-		}
-		@media #{$sp} {
-			left: -30px;
-		}
-	}
-	.swiper-pagination {
-		padding-top: 2rem;
-		display: flex;
-		flex-wrap: wrap;
-		gap: 1.2rem 0.8rem;
-		-webkit-box-pack: start;
-		-webkit-justify-content: flex-start;
-		-ms-flex-pack: start;
-		justify-content: center;
-		margin: 0 auto 0 0;
-		text-align: center;
-	}
-	.swiper-pagination-bullet {
-		width: 1.6rem;
-		height: 3px;
-		cursor: pointer;
-		transition: var(--transition);
-		vertical-align: top;
-		background-color: $gray-light;
-	}
-	.swiper-pagination-bullet-active {
-		width: 4rem;
-		background-color: $main-color;
+	100% {
+		transform: translateX(0);
+		opacity: 1;
 	}
 }
+@keyframes mv02-fadeOut {
+	0% {
+		transform: translateX(0);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(-6rem);
+		opacity: 0;
+	}
+}
+// .card01{
+// 	.l-inner {
+// 		padding: 0 6vw;
+// 	}
+// 	.swiper-area{
+// 		position: relative;
+// 	}
+// 	.slide-media{
+// 		padding-top: 62.5%;
+// 		border-radius: 4px;
+// 	}
+// 	.swiper-slide{
+// 		display: flex;
+// 		align-items: stretch;
+// 		height: initial;
+// 	}
+// 	.swiper-button-prev, .swiper-button-next {
+// 		display: grid;
+// 		place-content: center;
+// 		width: 60px;
+// 		height: 60px;
+// 		cursor: pointer;
+// 		transition: var(--transition);
+// 	}
+// 	.swiper-button-prev,
+// 	.swiper-button-next{
+// 		position: absolute;
+// 		z-index: 1;
+// 		top: 0;
+// 		bottom: 0;
+// 		margin: auto;
+// 		&::before{
+// 			background-color: $main-color;
+// 			box-shadow: $box-shadow;
+// 		}
+// 	}
+// 	.swiper-button-disabled {
+// 		&::before{
+// 			background-color: $gray-light;
+// 		}
+// 	}
+// 	.swiper-button-next{
+// 		right: -80px;
+// 		@media #{$tab} {
+// 			right: -50px;
+// 		}
+// 		@media #{$sp} {
+// 			right: -30px;
+// 		}
+// 	}
+// 	.swiper-button-prev{
+// 		left: -80px;
+// 		@media #{$tab} {
+// 			left: -50px;
+// 		}
+// 		@media #{$sp} {
+// 			left: -30px;
+// 		}
+// 	}
+// 	.swiper-pagination {
+// 		padding-top: 2rem;
+// 		display: flex;
+// 		flex-wrap: wrap;
+// 		gap: 1.2rem 0.8rem;
+// 		-webkit-box-pack: start;
+// 		-webkit-justify-content: flex-start;
+// 		-ms-flex-pack: start;
+// 		justify-content: center;
+// 		margin: 0 auto 0 0;
+// 		text-align: center;
+// 	}
+// 	.swiper-pagination-bullet {
+// 		width: 1.6rem;
+// 		height: 3px;
+// 		cursor: pointer;
+// 		transition: var(--transition);
+// 		vertical-align: top;
+// 		background-color: $gray-light;
+// 	}
+// 	.swiper-pagination-bullet-active {
+// 		width: 4rem;
+// 		background-color: $main-color;
+// 	}
+// }
 .respSlider {
 	overflow: hidden;
 	.swiper {
@@ -418,26 +438,7 @@
 		margin-top: 1.6rem;
 	}
 }
-@keyframes mv02-fadeIn {
-	0% {
-		transform: translateX(6rem);
-		opacity: 0;
-	}
-	100% {
-		transform: translateX(0);
-		opacity: 1;
-	}
-}
-@keyframes mv02-fadeOut {
-	0% {
-		transform: translateX(0);
-		opacity: 1;
-	}
-	100% {
-		transform: translateX(-6rem);
-		opacity: 0;
-	}
-}
+
 
 @media only screen and (max-width: 1024px) {
 	html {
