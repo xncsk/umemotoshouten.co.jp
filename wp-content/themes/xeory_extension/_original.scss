@@ -511,6 +511,12 @@ svg {
 		background-attachment: fixed;
 		z-index: -1;
 	}
+	@media #{$tab} {
+		&::before{
+			background-attachment: scroll;
+			background-size: cover;
+		}
+	}
 	@media #{$sp} {
 		&::before{
 			background: url(/img/w750xh1200-recruit-min.jpg) no-repeat 50% 50%;
