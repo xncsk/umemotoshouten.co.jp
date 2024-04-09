@@ -75,8 +75,7 @@
 	left: 0;
 	content: "";
 	border-radius: 50%;
-	-webkit-box-shadow: var(--box-shadow);
-	box-shadow: var(--box-shadow);
+	box-shadow: $box-shadow;
 }
 .swiper-button-prev::after,
 .swiper-button-next::after {
@@ -125,7 +124,7 @@
 		height: 2px;
 		cursor: pointer;
 		transition: var(--transition);
-		background-color: #fff;
+		background-color: white;
 	}
 	.swiper-pagination-bullet:not(:first-child) {
 		margin-top: 1.6rem;
@@ -173,12 +172,12 @@
 	.slide-link {
 		animation: 2s var(--easing) both;
 		opacity: 0;
-		@media #{$sp} {
-			display: flex;
-			align-items: center;
-			writing-mode: vertical-rl;
-			font-feature-settings: "palt";
-		}
+		// @media #{$sp} {
+		// 	display: flex;
+		// 	align-items: center;
+		// 	writing-mode: vertical-rl;
+		// 	font-feature-settings: "palt";
+		// }
 	}
 	.slide-title {
 		font-size: unquote("clamp(4rem,6vw,6rem)");
