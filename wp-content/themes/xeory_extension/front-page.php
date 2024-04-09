@@ -30,7 +30,7 @@
 			</div>
 			<div class="swiper-slide">
 				<div class="slide">
-					<div class="js-appear dn trbl-center">
+					<div class="js-appear dn">
 						<?php get_template_part('part-logo-animation'); ?>
 					</div>
 					<picture class="slide-media">

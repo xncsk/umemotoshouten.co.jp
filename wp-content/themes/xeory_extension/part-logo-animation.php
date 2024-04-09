@@ -1,4 +1,4 @@
-<svg version="1.1" id="logo-animation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve" width="300" height="300">
+<svg version="1.1" id="logo-animation" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
 	<style type="text/css">
 		.st0{fill:#A02C33;stroke:#9A2B32;stroke-width:0.7087;stroke-miterlimit:10;}
 		.st1{fill:#FFFFFF;}
