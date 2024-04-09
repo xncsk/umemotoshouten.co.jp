@@ -513,7 +513,9 @@ svg {
 	}
 	@media #{$sp} {
 		&::before{
+			background: url(/img/w750xh1200-recruit-min.jpg) no-repeat 50% 50%;
 			background-attachment: scroll;
+			background-size: cover;
 		}
 	}
 	// &.is-active{
