@@ -213,13 +213,13 @@
 				transform: translateY(-1.5%) scale(1.05);
 			}
 		}
-		&:last-child{
-			.slide-media{
-				img{
-					animation: blur-delay 1.5s ease-in 5s forwards;
-				}
-			}
-		}
+		// &:last-child{
+		// 	.slide-media{
+		// 		img{
+		// 			animation: blur-delay 1.5s ease-in 5s forwards;
+		// 		}
+		// 	}
+		// }
 	}
 	.swiper-slide{
 		&:first-child{
