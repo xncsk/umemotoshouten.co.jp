@@ -233,6 +233,14 @@
 			.slide-link{
 				animation-name: mv02-fadeIn;
 			}
+			@media #{$sp} {
+				.slide-title{
+					display: flex;
+					align-items: center;
+					writing-mode: vertical-rl;
+					font-feature-settings: "palt";
+				}
+			}
 			&.swiper-slide-prev{
 				.slide-title,
 				.slide-text,
@@ -247,6 +255,7 @@
 			.slide-link{
 				animation-name: mv02-fadeIn;
 			}
+			
 		}
 		&.anm-finished{
 			.slide-title,
