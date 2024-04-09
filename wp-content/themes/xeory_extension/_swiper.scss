@@ -170,14 +170,8 @@
 	.slide-title,
 	.slide-text,
 	.slide-link {
-		animation: 20s var(--easing) both;
+		animation: 2s var(--easing) both;
 		opacity: 0;
-		// @media #{$sp} {
-		// 	display: flex;
-		// 	align-items: center;
-		// 	writing-mode: vertical-rl;
-		// 	font-feature-settings: "palt";
-		// }
 	}
 	.slide-title {
 		font-size: unquote("clamp(4rem,6vw,6rem)");
@@ -233,14 +227,6 @@
 			.slide-link{
 				animation-name: mv02-fadeIn;
 			}
-			@media #{$sp} {
-				.slide-title{
-					display: flex;
-					align-items: center;
-					writing-mode: vertical-rl;
-					font-feature-settings: "palt";
-				}
-			}
 			&.swiper-slide-prev{
 				.slide-title,
 				.slide-text,
@@ -255,29 +241,12 @@
 			.slide-link{
 				animation-name: mv02-fadeIn;
 			}
-			@media #{$sp} {
-				.slide-title{
-					display: flex;
-					align-items: center;
-					writing-mode: vertical-rl;
-					font-feature-settings: "palt";
-				}
-			}
-			
 		}
 		&.anm-finished{
 			.slide-title,
 			.slide-text,
 			.slide-link{
 				animation-name: mv02-fadeOut;
-			}
-			@media #{$sp} {
-				.slide-title{
-					display: flex;
-					align-items: center;
-					writing-mode: vertical-rl;
-					font-feature-settings: "palt";
-				}
 			}
 		}
 	}
