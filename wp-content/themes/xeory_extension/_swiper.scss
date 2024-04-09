@@ -271,6 +271,14 @@
 			.slide-link{
 				animation-name: mv02-fadeOut;
 			}
+			@media #{$sp} {
+				.slide-title{
+					display: flex;
+					align-items: center;
+					writing-mode: vertical-rl;
+					font-feature-settings: "palt";
+				}
+			}
 		}
 	}
 }
