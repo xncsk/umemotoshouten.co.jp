@@ -220,7 +220,7 @@
 		&:last-child{
 			.slide-media{
 				img{
-					animation: blur-delay 1.5s ease-in 5s forwards;
+					// animation: blur-delay 1.5s ease-in 5s forwards;
 				}
 			}
 		}
@@ -255,15 +255,15 @@
 			}
 		}
 	}
-	.slide-title{
-		@media #{$sp} {
-			text-align: left;
-			display: flex;
-			align-items: center;
-			writing-mode: vertical-rl;
-			font-feature-settings: "palt";
-		}
-	}
+	// .slide-title{
+	// 	@media #{$sp} {
+	// 		text-align: left;
+	// 		display: flex;
+	// 		align-items: center;
+	// 		writing-mode: vertical-rl;
+	// 		font-feature-settings: "palt";
+	// 	}
+	// }
 }
 @keyframes blur-delay {
 	0%{filter: blur(0) opacity(100%);}
