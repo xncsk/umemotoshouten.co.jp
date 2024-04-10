@@ -142,7 +142,7 @@
 	</div>
 	<div class="wrap">
 		<p class="pv10vw fs7vw font-noto-serif fw700"><span class="smoothText activeTrigger df-jc-center">仕上がりに</span><span class="smoothText activeTrigger fs10vw df-jc-center">絶対の自信</span></p>
-		<div class="read-text tac sp-tal fs20 font-noto-serif mb10vw">
+		<div class="read-text tac sp-tal fs20 font-noto-serif mb6vw">
 			<p class="fade-in fade-in-up">私たちは、お客様の理想を形にするために<br class="sp-dn">確かな技術と経験を持ったプロフェッショナル集団です。</p>
 			<p class="fade-in fade-in-up">お客様とのコミュニケーションを大切にし<br class="sp-dn">細部にまでこだわり抜いたリフォーム工事を提供しています。</p>
 			<p class="fade-in fade-in-up">お客様の満足を第一に考え<br class="sp-dn">安心してご依頼いただけるサービスを心がけています。</p>
