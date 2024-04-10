@@ -32,16 +32,16 @@
 		<input type="checkbox" id="pure-toggle-right" class="pure-toggle" data-toggle="right"/>
 		<label class="pure-toggle-label pc-dn" for="pure-toggle-right" data-toggle-label="right"><span class="pure-toggle-icon"></span><span class="pure-toggle-text">MENU</span></label>
 		<nav class="pure-drawer" data-position="right">
-			<a href="<?php echo esc_url(home_url()); ?>"><figure class="sp-span-8 center mb30"><img src="/img/logo-rec-posi.svg" alt="<?= COMPANYNAME ?>ロゴ"></figure></a>
+			<a href="<?php echo esc_url(home_url()); ?>"><figure class="sp-span-8 center mb0"><img src="/img/logo-rec-posi.svg" alt="<?= COMPANYNAME ?>ロゴ"></figure></a>
 			<div class="gnav-container">
-				<div class="mb20">
-					<p class="tac mb10">お気軽にお電話ください。</p>
+				<div class="mb10">
 					<div class="tac">
 						<a href="tel:<?= TEL ?>" class="btn is-main btnarrow">
 							<span class="i-mobile mr5"></span><span>電話する</span>
 						</a>
 					</div>
 				</div>
+				<p class="tac mb20">お気軽にお電話ください！</p>
 				<ul class="li-pure-drawer">
 					<?php get_template_part('part-gnav'); ?>
 					<li><a href="/privacy-policy/">プライバシーポリシー</a></li>
