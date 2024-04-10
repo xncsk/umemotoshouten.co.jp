@@ -21,7 +21,7 @@ get_header();
 				<p class="tac gray fadeUpOnload">CONFIRM</p>
 			</header>
 			<div class="span-9 center">
-				<?php echo do_shortcode('[mwform_formkey key="20"]'); ?>
+				<?php echo do_shortcode('[mwform_formkey key="16"]'); ?>
 			</div>
 		</section>
 	</article>

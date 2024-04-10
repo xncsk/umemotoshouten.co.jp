@@ -134,7 +134,7 @@
 	</script>
 <?php endif; ?>
 <?php get_template_part('script_common'); ?>
-<?php if(is_page('entry')): ?>
+<?php if(is_page('entry') || is_page('error')): ?>
 	<script>
 		const div = document.querySelector('#mw_wp_form_mw-wp-form-16 form');
 		div.classList.add('h-adr');
