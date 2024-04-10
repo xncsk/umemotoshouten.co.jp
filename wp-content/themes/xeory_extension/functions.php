@@ -90,7 +90,7 @@ function custom_login_logo() {
 			background-size: cover;
 			background-image: url(/img/logo-rec-posi.svg);
 			width: 100%;
-			height: 55px;
+			height: 96px;
 		}
 	</style>
 	<?php
