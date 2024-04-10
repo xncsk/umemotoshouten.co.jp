@@ -178,8 +178,8 @@
 		line-height: 1.4;
 		font-weight: bold;
 		@media #{$sp} {
-			// display: flex;
-			// align-items: center;
+			display: flex;
+			align-items: center;
 			writing-mode: vertical-rl;
 			font-feature-settings: "palt";
 		}
@@ -257,7 +257,7 @@
 }
 @keyframes mv02-fadeIn {
 	0% {
-		transform: translateY(6rem);
+		transform: translateY(6rem) translateX(50%);
 		opacity: 0;
 	}
 	100% {
