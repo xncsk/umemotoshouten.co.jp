@@ -180,11 +180,10 @@
 			font-feature-settings: "palt";
 		}
 	}
-	// .slide-text,
-	// .slide-link{
-	// 	animation: 2s var(--easing) both;
-		// opacity: 0;
-	// }
+	.slide-text,
+	.slide-link{
+		writing-mode: horizontal-tb;
+	}
 	.slide-title {
 		font-size: unquote("clamp(4rem,6vw,6rem)");
 		line-height: 1.4;
