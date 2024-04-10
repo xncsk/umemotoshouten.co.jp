@@ -66,14 +66,6 @@ get_header();
 								</td>
 							</tr>
 							<tr>
-								<th class="tal">特定建設業</th>
-								<td>許可番号　国土交通大臣許可（特-●）第●●●●●号</td>
-							</tr>
-							<tr>
-								<th class="tal">一般建設業</th>
-								<td>許可番号　国土交通大臣許可（特-●）第●●●●●号</td>
-							</tr>
-							<tr>
 								<th class="tal">取引金融機関</th>
 								<td>みずほ銀行、あおぞら銀行</td>
 							</tr>
