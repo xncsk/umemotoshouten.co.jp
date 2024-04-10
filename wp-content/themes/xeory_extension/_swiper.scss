@@ -170,7 +170,7 @@
 	.slide-title,
 	.slide-text,
 	.slide-link {
-		animation: 2s var(--easing) both;
+		animation: 5s var(--easing) both;
 		opacity: 0;
 	}
 	.slide-title {
@@ -178,6 +178,7 @@
 		line-height: 1.4;
 		font-weight: bold;
 		@media #{$sp} {
+			text-align: left;
 			display: flex;
 			align-items: center;
 			writing-mode: vertical-rl;
