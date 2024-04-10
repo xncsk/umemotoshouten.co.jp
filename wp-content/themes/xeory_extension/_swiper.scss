@@ -170,20 +170,16 @@
 	.slide-title,
 	.slide-text,
 	.slide-link{
-		// animation: 2s var(--easing) both;
-		// opacity: 0;
-		@media #{$sp} {
-			text-align: left;
-			display: flex;
-			align-items: center;
-			writing-mode: vertical-rl;
-			font-feature-settings: "palt";
-		}
+		animation: 2s var(--easing) both;
+		opacity: 0;
+		// @media #{$sp} {
+		// 	text-align: left;
+		// 	display: flex;
+		// 	align-items: center;
+		// 	writing-mode: vertical-rl;
+		// 	font-feature-settings: "palt";
+		// }
 	}
-	// .slide-text,
-	// .slide-link{
-	// 	writing-mode: horizontal-tb;
-	// }
 	.slide-title {
 		font-size: unquote("clamp(4rem,6vw,6rem)");
 		line-height: 1.4;
@@ -230,13 +226,13 @@
 			.slide-title,
 			.slide-text,
 			.slide-link{
-				// animation-name: mv02-fadeIn;
+				animation-name: mv02-fadeIn;
 			}
 			&.swiper-slide-prev{
 				.slide-title,
 				.slide-text,
 				.slide-link{
-					// animation-name: mv02-fadeOut;
+					animation-name: mv02-fadeOut;
 				}
 			}
 		}
@@ -244,14 +240,14 @@
 			.slide-title,
 			.slide-text,
 			.slide-link{
-				// animation-name: mv02-fadeIn;
+				animation-name: mv02-fadeIn;
 			}
 		}
 		&.anm-finished{
 			.slide-title,
 			.slide-text,
 			.slide-link{
-				// animation-name: mv02-fadeOut;
+				animation-name: mv02-fadeOut;
 			}
 		}
 	}
