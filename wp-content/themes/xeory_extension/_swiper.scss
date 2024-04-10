@@ -177,13 +177,6 @@
 		font-size: unquote("clamp(4rem,6vw,6rem)");
 		line-height: 1.4;
 		font-weight: bold;
-		@media #{$sp} {
-			text-align: left;
-			display: flex;
-			align-items: center;
-			writing-mode: vertical-rl;
-			font-feature-settings: "palt";
-		}
 	}
 	.slide-text {
 		font-size: 1.8rem;
