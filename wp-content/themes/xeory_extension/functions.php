@@ -88,7 +88,7 @@ function custom_login_logo() {
 			display: block;
 			background-repeat: no-repeat;
 			background-size: cover;
-			background-image: url(/img/logo-yoko-posi.svg);
+			background-image: url(/img/logo-rec-posi.svg);
 			width: 100%;
 			height: 55px;
 		}

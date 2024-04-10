@@ -35,7 +35,7 @@
 			<a href="<?php echo esc_url(home_url()); ?>"><figure class="sp-span-8 center mb30"><img src="/img/logo-rec-posi.svg" alt="<?= COMPANYNAME ?>ロゴ"></figure></a>
 			<div class="gnav-container">
 				<div class="mb20">
-					<p class="fkds-slash mb10">お気軽にお電話ください。</p>
+					<p class="tac mb10">お気軽にお電話ください。</p>
 					<div class="tac">
 						<a href="tel:<?= TEL ?>" class="btn is-main btnarrow">
 							<span class="i-mobile mr5"></span><span>電話する</span>
