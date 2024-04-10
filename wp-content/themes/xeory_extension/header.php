@@ -45,6 +45,8 @@
 				<ul class="li-pure-drawer">
 					<?php get_template_part('part-gnav'); ?>
 					<li><a href="/privacy-policy/">プライバシーポリシー</a></li>
+					<?php get_template_part('part-gnav'); ?>
+					<?php get_template_part('part-gnav'); ?>
 				</ul>
 			</div>
 		</nav>
