@@ -421,7 +421,10 @@ svg {
 // }
 .bg-grad{
 	background: linear-gradient(white 65%, lighten($main-color, 30%) 99.9%, $main-color);
-
+}
+.bg-logo{
+	background: url(/img/logo-symbol-gray.svg) no-repeat 50% 50%;
+	background-size: 50%;
 }
 .bg-matsuri{
 	position: relative;

@@ -48,7 +48,7 @@
 		
 	</div>
 </div>
-<section class="section bg-grad">
+<section class="section">
 	<header class="mb5vw wrap">
 		<h2 class="smoothText activeTrigger h2 borderLeftTrigger">SERIVCE</h2>
 		<p class="gray fade-in fade-in-up"><?= COMPANYNAME ?>は、マンションリフォームやリノベーションを主軸とし、<br class="sp-dn">新たな展開に果敢に挑戦するチャレンジングカンパニーです。</p>
@@ -140,7 +140,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="wrap">
+	<div class="wrap bg-logo">
 		<p class="pv10vw fs7vw font-noto-serif fw700"><span class="smoothText activeTrigger df-jc-center">仕上がりに</span><span class="smoothText activeTrigger fs10vw df-jc-center">絶対の自信</span></p>
 		<div class="read-text tac sp-tal fs20 font-noto-serif mb6vw">
 			<p class="fade-in fade-in-up">私たちは、お客様の理想を形にするために<br class="sp-dn">確かな技術と経験を持ったプロフェッショナル集団です。</p>
