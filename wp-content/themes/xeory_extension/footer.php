@@ -32,7 +32,7 @@
 <?php if(is_home() || is_front_page()): ?>
 	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 	<script>
-		const myDelay = 25000;
+		const myDelay = 5000;
 		let timer;
 		const switchAnimation = () => {
 			clearTimeout(timer);
