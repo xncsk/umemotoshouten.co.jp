@@ -251,15 +251,15 @@
 			}
 		}
 	}
-	// .slide-title{
-	// 	@media #{$sp} {
-	// 		text-align: left;
-	// 		display: flex;
-	// 		align-items: center;
-	// 		writing-mode: vertical-rl;
-	// 		font-feature-settings: "palt";
-	// 	}
-	// }
+	@media #{$sp} {
+		.slide-title{
+			text-align: left;
+			display: flex;
+			align-items: normal;
+			writing-mode: vertical-rl;
+			font-feature-settings: "palt";
+		}
+	}
 }
 @keyframes blur-delay {
 	0%{filter: blur(0) opacity(100%);}
