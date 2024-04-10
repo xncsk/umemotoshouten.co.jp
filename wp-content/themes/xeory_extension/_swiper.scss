@@ -167,10 +167,8 @@
 			transform: translateX(-1.5%) scale(1.1);
 		}
 	}
-	.slide-title,
-	.slide-text,
-	.slide-link {
-		animation: 5s var(--easing) both;
+	.slide-title{
+		animation: 2s var(--easing) both;
 		// opacity: 0;
 		@media #{$sp} {
 			text-align: left;
@@ -179,6 +177,11 @@
 			writing-mode: vertical-rl;
 			font-feature-settings: "palt";
 		}
+	}
+	.slide-text,
+	.slide-link{
+		animation: 2s var(--easing) both;
+		// opacity: 0;
 	}
 	.slide-title {
 		font-size: unquote("clamp(4rem,6vw,6rem)");
