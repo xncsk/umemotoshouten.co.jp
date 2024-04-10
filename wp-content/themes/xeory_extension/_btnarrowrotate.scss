@@ -21,9 +21,13 @@
 	}
 	&.is-gray{
 		background:$bg-gray;
+		color: $text-color;
 		&:hover{
 			color:white;
 			background:$text-color;
+		}
+		input{
+			color: $text-color;
 		}
 	}
 	
@@ -48,6 +52,30 @@
 		}
 	}
 }
+.btnarrowBack{
+	padding: 10px 30px 10px 40px;
+	&::before{
+		content: '';
+		position: absolute;
+		top: 50%;
+		left: 13px;
+		width: 5px;
+		height: 5px;
+		border-left: 2px solid $text-color;
+		border-bottom: 2px solid $text-color;
+		transform: translateY(-50%) rotate(45deg);
+		transition: all .3s;
+		z-index: 1;
+	}
+	&:hover{
+		&::before{
+			animation: arrowrotate .3s;
+		}
+	}
+	input{
+		padding: 10px 30px 10px 40px;
+	}
+}
 
 
 @keyframes arrowrotate {
@@ -60,5 +88,10 @@
 	.btn{
 		padding: 0;
 		border:0;
+	}
+	&.mw_wp_form_input{
+		.btnarrowBack{
+			display: none;
+		}
 	}
 }
