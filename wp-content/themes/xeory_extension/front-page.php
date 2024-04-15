@@ -53,100 +53,98 @@
 		<h2 class="smoothText activeTrigger h2 borderLeftTrigger">SERIVCE</h2>
 		<p class="gray fade-in fade-in-up"><?= COMPANYNAME ?>は、マンションリフォームやリノベーションを主軸とし、<br class="sp-dn">新たな展開に果敢に挑戦するチャレンジングカンパニーです。</p>
 	</header>
-	<div class="wrap">
-		<div class="respSlider l-section">
-			<div class="l-inner">
-				<div class="swiper swiper-a">
-					<ul class="swiper-wrapper li-service">
-						<li class="swiper-slide">
-							<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-dinoc-min.jpg" class="bgappearTrigger border is-text-color bw2" alt="ダイノックシート"></figure>
-							<dl class="fade-in fade-in-up">
-								<dt class="mb5 b tac">ダイノックシート</dt>
-								<dd>ダイノックシートは耐久性が高く、さまざまなデザインや色合いが用意されており、お部屋の雰囲気を一新するのに最適です。古くなった壁面の張替えや、デザインの変更をお考えの方にお勧めです。</dd>
-							</dl>
-						</li>
-						<li class="swiper-slide">
-							<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-outerwall-min.jpg" class="bgappearTrigger border is-text-color bw2" alt="外壁工事・塗装工事"></figure>
-							<dl class="fade-in fade-in-up">
-								<dt class="mb5 b tac">外壁工事・塗装工事</dt>
-								<dd>外壁は建物を守る重要な要素であり、風雨や紫外線などの外部からの影響を受けやすいため、定期的なメンテナンスが必要です。</dd>
-							</dl>
-						</li>
-						<li class="swiper-slide">
-							<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-daiku.jpg" class="bgappearTrigger border is-text-color bw2" alt="大工工事"></figure>
-							<dl class="fade-in fade-in-up">
-								<dt class="mb5 b tac">大工工事</dt>
-								<dd>大工工事は、建物の骨組みや基本的な構造を担う重要な工程です。新たな壁の設置や取り壊し、天井や床の補修など、建物全体の安定性や美観を保つために欠かせない工事です。</dd>
-							</dl>
-						</li>
-						<?php
-						/*
-						<li class="swiper-slide">
-							<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-repair-min.jpg" class="bgappearTrigger border is-text-color bw2" alt="外壁補修"></figure>
-							<dl class="fade-in fade-in-up">
-								<dt class="mb5 b tac">外壁補修</dt>
-								<dd>外壁は建物を保護し、美観を維持する重要な要素ですが、時間の経過とともに劣化や破損が生じることがあります。</dd>
-							</dl>
-						</li>
-						<li class="swiper-slide">
-							<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-tile-min.jpg" class="bgappearTrigger border is-text-color bw2" alt="タイル工事"></figure>
-							<dl class="fade-in fade-in-up">
-								<dt class="mb5 b tac">タイル工事</dt>
-								<dd>壁やタイルは室内外の美観や清潔さに大きな影響を与えますが、時間とともに傷みや汚れが蓄積されることがあります。</dd>
-							</dl>
-						</li>
-						<li class="swiper-slide">
-							<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-sealing-min.jpg" class="bgappearTrigger border is-text-color bw2" alt="シーリング工事"></figure>
-							<dl class="fade-in fade-in-up">
-								<dt class="mb5 b tac">シーリング工事</dt>
-								<dd>シーリングは建物の隙間や接合部を密封し、水漏れや風の侵入を防ぐ重要な役割を果たしています。</dd>
-							</dl>
-						</li>
-						<li class="swiper-slide">
-							<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-entrance-min.jpg" class="bgappearTrigger border is-text-color bw2" alt="エントランス工事"></figure>
-							<dl class="fade-in fade-in-up">
-								<dt class="mb5 b tac">エントランス工事</dt>
-								<dd>古くなったエントランスのリニューアルや、セキュリティの強化、アクセシビリティの向上など、様々なニーズに対応しています。</dd>
-							</dl>
-						</li>
-						*/
-						?>
-						<li class="swiper-slide">
-							<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-pipe-min.jpg" class="bgappearTrigger border is-text-color bw2" alt="設備工事"></figure>
-							<dl class="fade-in fade-in-up">
-								<dt class="mb5 b tac">設備工事</dt>
-								<dd>古くなった設備の更新や、新しい設備の取り付け、改修など、お客様のニーズに合わせた工事を行っています。</dd>
-							</dl>
-						</li>
-						<li class="swiper-slide">
-							<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-interior-min.jpg" class="bgappearTrigger border is-text-color bw2" alt="内装工事"></figure>
-							<dl class="fade-in fade-in-up">
-								<dt class="mb5 b tac">内装工事</dt>
-								<dd>壁紙の張り替えや床材の交換、キッチンやバスルームの改装など、お客様のご要望に合わせた工事を行っています。</dd>
-							</dl>
-						</li>
-						<li class="swiper-slide">
-							<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-denki.jpg" class="bgappearTrigger border is-text-color bw2" alt="電気工事"></figure>
-							<dl class="fade-in fade-in-up">
-								<dt class="mb5 b tac">電気工事</dt>
-								<dd>配線の新設や修理、コンセントやスイッチの交換など、さまざまな電気設備に関する工事を行っています。</dd>
-							</dl>
-						</li>
-						<?php
-						/*
-						<li class="swiper-slide">
-							<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-largeapartment-repair-min.jpg" class="bgappearTrigger border is-text-color bw2" alt="大規模修繕工事"></figure>
-							<dl class="fade-in fade-in-up">
-								<dt class="mb5 b tac">大規模修繕工事</dt>
-								<dd>大規模修繕工事は、外壁や屋根の補修、給排水管の更新、共用部のリニューアルなど、建物全体の状態を改善するための総合的な工事です。</dd>
-							</dl>
-						</li>
-						*/
-						?>
-					</ul>
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
-				</div>
+	<div class="respSlider l-section">
+		<div class="l-inner">
+			<div class="swiper swiper-a">
+				<ul class="swiper-wrapper li-service">
+					<li class="swiper-slide">
+						<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-dinoc-min.jpg" class="bgappearTrigger border is-text-color bw2" alt="ダイノックシート"></figure>
+						<dl class="fade-in fade-in-up">
+							<dt class="mb5 b tac">ダイノックシート</dt>
+							<dd>ダイノックシートは耐久性が高く、さまざまなデザインや色合いが用意されており、お部屋の雰囲気を一新するのに最適です。古くなった壁面の張替えや、デザインの変更をお考えの方にお勧めです。</dd>
+						</dl>
+					</li>
+					<li class="swiper-slide">
+						<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-outerwall-min.jpg" class="bgappearTrigger border is-text-color bw2" alt="外壁工事・塗装工事"></figure>
+						<dl class="fade-in fade-in-up">
+							<dt class="mb5 b tac">外壁工事・塗装工事</dt>
+							<dd>外壁は建物を守る重要な要素であり、風雨や紫外線などの外部からの影響を受けやすいため、定期的なメンテナンスが必要です。</dd>
+						</dl>
+					</li>
+					<li class="swiper-slide">
+						<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-daiku.jpg" class="bgappearTrigger border is-text-color bw2" alt="大工工事"></figure>
+						<dl class="fade-in fade-in-up">
+							<dt class="mb5 b tac">大工工事</dt>
+							<dd>大工工事は、建物の骨組みや基本的な構造を担う重要な工程です。新たな壁の設置や取り壊し、天井や床の補修など、建物全体の安定性や美観を保つために欠かせない工事です。</dd>
+						</dl>
+					</li>
+					<?php
+					/*
+					<li class="swiper-slide">
+						<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-repair-min.jpg" class="bgappearTrigger border is-text-color bw2" alt="外壁補修"></figure>
+						<dl class="fade-in fade-in-up">
+							<dt class="mb5 b tac">外壁補修</dt>
+							<dd>外壁は建物を保護し、美観を維持する重要な要素ですが、時間の経過とともに劣化や破損が生じることがあります。</dd>
+						</dl>
+					</li>
+					<li class="swiper-slide">
+						<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-tile-min.jpg" class="bgappearTrigger border is-text-color bw2" alt="タイル工事"></figure>
+						<dl class="fade-in fade-in-up">
+							<dt class="mb5 b tac">タイル工事</dt>
+							<dd>壁やタイルは室内外の美観や清潔さに大きな影響を与えますが、時間とともに傷みや汚れが蓄積されることがあります。</dd>
+						</dl>
+					</li>
+					<li class="swiper-slide">
+						<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-sealing-min.jpg" class="bgappearTrigger border is-text-color bw2" alt="シーリング工事"></figure>
+						<dl class="fade-in fade-in-up">
+							<dt class="mb5 b tac">シーリング工事</dt>
+							<dd>シーリングは建物の隙間や接合部を密封し、水漏れや風の侵入を防ぐ重要な役割を果たしています。</dd>
+						</dl>
+					</li>
+					<li class="swiper-slide">
+						<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-entrance-min.jpg" class="bgappearTrigger border is-text-color bw2" alt="エントランス工事"></figure>
+						<dl class="fade-in fade-in-up">
+							<dt class="mb5 b tac">エントランス工事</dt>
+							<dd>古くなったエントランスのリニューアルや、セキュリティの強化、アクセシビリティの向上など、様々なニーズに対応しています。</dd>
+						</dl>
+					</li>
+					*/
+					?>
+					<li class="swiper-slide">
+						<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-pipe-min.jpg" class="bgappearTrigger border is-text-color bw2" alt="設備工事"></figure>
+						<dl class="fade-in fade-in-up">
+							<dt class="mb5 b tac">設備工事</dt>
+							<dd>古くなった設備の更新や、新しい設備の取り付け、改修など、お客様のニーズに合わせた工事を行っています。</dd>
+						</dl>
+					</li>
+					<li class="swiper-slide">
+						<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-interior-min.jpg" class="bgappearTrigger border is-text-color bw2" alt="内装工事"></figure>
+						<dl class="fade-in fade-in-up">
+							<dt class="mb5 b tac">内装工事</dt>
+							<dd>壁紙の張り替えや床材の交換、キッチンやバスルームの改装など、お客様のご要望に合わせた工事を行っています。</dd>
+						</dl>
+					</li>
+					<li class="swiper-slide">
+						<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-denki.jpg" class="bgappearTrigger border is-text-color bw2" alt="電気工事"></figure>
+						<dl class="fade-in fade-in-up">
+							<dt class="mb5 b tac">電気工事</dt>
+							<dd>配線の新設や修理、コンセントやスイッチの交換など、さまざまな電気設備に関する工事を行っています。</dd>
+						</dl>
+					</li>
+					<?php
+					/*
+					<li class="swiper-slide">
+						<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-largeapartment-repair-min.jpg" class="bgappearTrigger border is-text-color bw2" alt="大規模修繕工事"></figure>
+						<dl class="fade-in fade-in-up">
+							<dt class="mb5 b tac">大規模修繕工事</dt>
+							<dd>大規模修繕工事は、外壁や屋根の補修、給排水管の更新、共用部のリニューアルなど、建物全体の状態を改善するための総合的な工事です。</dd>
+						</dl>
+					</li>
+					*/
+					?>
+				</ul>
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
 			</div>
 		</div>
 	</div>

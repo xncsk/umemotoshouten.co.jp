@@ -390,10 +390,13 @@
 			border-color: white;
 		}
 	}
-	// .l-inner{
-	// 	padding-right: 2.5%;
-	// 	padding-left: 2.5%;
-	// }
+	.l-inner{
+		padding-right: 2.5%;
+		padding-left: 2.5%;
+		max-width: unquote("min(1200px, 95%)");
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.swiper-button-prev {
 		right: calc(100% - 1.6rem);
 	}
@@ -470,10 +473,10 @@
 			padding: 0 3.2rem;
 		}
 		.swiper-button-prev {
-			right: calc(100% - 30px);
+			right: calc(100% - 50px);
 		}
 		.swiper-button-next {
-			left: calc(100% - 30px);
+			left: calc(100% - 50px);
 		}
 	}
 }
