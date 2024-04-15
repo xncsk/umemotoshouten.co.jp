@@ -72,7 +72,7 @@
 						</dl>
 					</li>
 					<li class="swiper-slide">
-						<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-daiku.jpg" class="bgappearTrigger border is-text-color bw2" alt="大工工事"></figure>
+						<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-daiku-min.jpg" class="bgappearTrigger border is-text-color bw2" alt="大工工事"></figure>
 						<dl class="fade-in fade-in-up">
 							<dt class="mb5 b tac">大工工事</dt>
 							<dd>大工工事は、建物の骨組みや基本的な構造を担う重要な工程です。新たな壁の設置や取り壊し、天井や床の補修など、建物全体の安定性や美観を保つために欠かせない工事です。</dd>
@@ -125,7 +125,7 @@
 						</dl>
 					</li>
 					<li class="swiper-slide">
-						<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-denki.jpg" class="bgappearTrigger border is-text-color bw2" alt="電気工事"></figure>
+						<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-denki-min.jpg" class="bgappearTrigger border is-text-color bw2" alt="電気工事"></figure>
 						<dl class="fade-in fade-in-up">
 							<dt class="mb5 b tac">室内電気工事</dt>
 							<dd>配線の新設や修理、コンセントやスイッチの交換など、さまざまな電気設備に関する工事を行っています。</dd>
