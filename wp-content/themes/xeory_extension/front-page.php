@@ -127,7 +127,7 @@
 					<li class="swiper-slide">
 						<figure class="bgLRTrigger mb10"><img src="/img/w800xh600-denki.jpg" class="bgappearTrigger border is-text-color bw2" alt="電気工事"></figure>
 						<dl class="fade-in fade-in-up">
-							<dt class="mb5 b tac">電気工事</dt>
+							<dt class="mb5 b tac">室内電気工事</dt>
 							<dd>配線の新設や修理、コンセントやスイッチの交換など、さまざまな電気設備に関する工事を行っています。</dd>
 						</dl>
 					</li>
