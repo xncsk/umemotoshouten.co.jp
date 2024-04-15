@@ -54,6 +54,17 @@ get_header();
 								<th class="tal">事業内容</th>
 								<td>
 									<ul>
+										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span><span>電気工事業</span></li>
+										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span>内装工事業</li>
+										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span>解体工事業</li>
+										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span>リフォーム工事業</li>
+										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span>建築・土木工事の施工請負</li>
+										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span>建設機械のレンタル</li>
+										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span>産業廃棄物の収集、運搬及び処理業</li>
+										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span>不動産の売買、賃貸、管理及びその仲介、代理</li>
+										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span>ホテル・旅館・簡易宿泊所等の経営</li>
+										<?php
+										/*
 										<li>・マンションのリフォーム工事の企画、設計、施工</li>
 										<li>・マンションの内装工事、外装工事、設備工事</li>
 										<li>・マンションの耐震補強工事、バリアフリー化工事</li>
@@ -62,6 +73,8 @@ get_header();
 										<li>・マンションの維持管理サービス、アフターサポート</li>
 										<li>・マンションのコンサルティング、アドバイザリーサービス</li>
 										<li>・その他、マンションに関連するリフォーム・リノベーションに関する一切の事業</li>
+										*/
+										?>
 									</ul>
 								</td>
 							</tr>
