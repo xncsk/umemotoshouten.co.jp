@@ -309,30 +309,45 @@ svg {
 // }
 .li-service{
 	>li{
-		&:nth-child(1),
-		&:nth-child(2),
-		&:nth-child(3){
-			width: 32%;
-			margin-right: 2%;
-		}
-		&:nth-child(4),
-		&:nth-child(5),
-		&:nth-child(6),
-		&:nth-child(7),
-		&:nth-child(8),
-		&:nth-child(9),
-		&:nth-child(10),
-		&:nth-child(11),{
-			margin-right: 2%;
-			width: 23.5%;
-		}
-		&:nth-child(3),
-		&:nth-child(7),
-		&:nth-child(11){
+		// &:nth-child(1),
+		// &:nth-child(2),
+		// &:nth-child(3){
+		// 	width: 32%;
+		// 	margin-right: 2%;
+		// }
+		// &:nth-child(4),
+		// &:nth-child(5),
+		// &:nth-child(6),
+		// &:nth-child(7),
+		// &:nth-child(8),
+		// &:nth-child(9),
+		// &:nth-child(10),
+		// &:nth-child(11),{
+		// 	margin-right: 2%;
+		// 	width: 23.5%;
+		// }
+		// &:nth-child(3),
+		// &:nth-child(7),
+		// &:nth-child(11){
+		// 	margin-right: 0;
+		// }
+		width: 32%;
+		margin-right: 2%;
+		&:nth-child(3n){
 			margin-right: 0;
 		}
-		
-		
+		@media #{$tab} {
+			width: 49%;
+			&:nth-child(2n){
+				margin-right: 0;
+			}
+			&:nth-child(3n){
+				margin-right: 2%;
+			}
+			&:nth-child(6n){
+				margin-right: 0;
+			}
+		}
 		@media #{$sp} {
 			&:nth-child(1),
 			&:nth-child(2),
