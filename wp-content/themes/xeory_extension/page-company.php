@@ -57,7 +57,7 @@ get_header();
 										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span>不動産の売買、賃貸、管理及びその仲介、代理</li>
 										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span>リフォーム工事業</li>
 										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span>ダイノックシート</li>
-										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span>解体業</li>
+										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span>解体工事</li>
 										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span>設備工事</li>
 										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span><span>電気工事業</span></li>
 										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span>建築・土木工事の施工請負</li>
