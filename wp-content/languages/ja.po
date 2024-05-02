@@ -750,7 +750,7 @@ msgid "sub item"
 msgstr "サブ項目"
 
 #. translators: 1: theme.json, 2: settings.spacing.spacingScale
-#: wp-includes/class-wp-theme-json.php:3513
+#: wp-includes/class-wp-theme-json.php:3531
 msgid "Some of the %1$s %2$s values are invalid"
 msgstr "%1$s %2$s の値の一部が無効です"
 
@@ -2045,18 +2045,18 @@ msgid "Logged in as %1$s. <a href=\"%2$s\">Edit your profile</a>. <a href=\"%3$s
 msgstr "%1$s としてログインしています。<a href=\"%2$s\">プロフィールを編集します</a>。<a href=\"%3$s\">ログアウトしますか</a> ?"
 
 #. translators: %s: Digit to indicate multiple of sizing, eg. 2X-Large.
-#: wp-includes/class-wp-theme-json.php:3589
+#: wp-includes/class-wp-theme-json.php:3607
 msgid "%sX-Large"
 msgstr "%sX-Large"
 
 #. translators: %s: Digit to indicate multiple of sizing, eg. 2X-Small.
-#: wp-includes/class-wp-theme-json.php:3552
+#: wp-includes/class-wp-theme-json.php:3570
 msgid "%sX-Small"
 msgstr "%sX-Small"
 
 #. translators: 1: theme.json, 2: Value name, 3: Value path, 4: Another value
 #. name.
-#: wp-includes/class-wp-theme-json.php:2171
+#: wp-includes/class-wp-theme-json.php:2189
 msgid "Your %1$s file uses a dynamic value (%2$s) for the path at %3$s. However, the value at %3$s is also a dynamic value (pointing to %4$s) and pointing to another dynamic value is not supported. Please update %3$s to point directly to %4$s."
 msgstr "%1$s ファイルは、%3$s でのパスに動的な値 (%2$s) を使用します。しかし、%3$s の値も動的な値 (%4$s) であり、別の動的な値の指定はサポートしていません。%3$s を更新して、%4$s を直接指定してください。"
 
@@ -2120,7 +2120,7 @@ msgstr "現在のオブジェクトキャッシュの実装は、メモリ内ラ
 
 #. translators: Custom template title in the Site Editor, referencing a deleted
 #. author. %s: Author nicename.
-#: wp-includes/block-template-utils.php:818
+#: wp-includes/block-template-utils.php:859
 msgid "Deleted author: %s"
 msgstr "削除された投稿者: %s"
 
@@ -2130,7 +2130,7 @@ msgstr "削除された投稿者: %s"
 #. name.
 #: wp-includes/block-template-utils.php:623
 #: wp-includes/block-template-utils.php:699
-#: wp-includes/block-template-utils.php:832
+#: wp-includes/block-template-utils.php:873
 msgid "Template for %s"
 msgstr "%s のテンプレート"
 
@@ -3440,11 +3440,11 @@ msgstr "投稿フォーマットリンク"
 msgid "The calendar block is hidden because there are no published posts."
 msgstr "公開された記事がないため、カレンダーブロックは非表示です。"
 
-#: wp-includes/block-template-utils.php:1258
+#: wp-includes/block-template-utils.php:1299
 msgid "Unable to open export file (archive) for writing."
 msgstr "エクスポートファイル (アーカイブ) を書き込み用に開けません。"
 
-#: wp-includes/block-template-utils.php:1249
+#: wp-includes/block-template-utils.php:1290
 msgid "Zip Export not supported."
 msgstr "zip エクスポートはサポートされません。"
 
@@ -4804,7 +4804,8 @@ msgstr "一致するテンプレートが見つかりませんでした。"
 msgid "Empty template: %s"
 msgstr "空のテンプレート: %s"
 
-#: wp-includes/block-template-utils.php:752
+#: wp-includes/block-template-utils.php:742
+#: wp-includes/block-template-utils.php:810
 msgid "No theme is defined for this template."
 msgstr "このテンプレートにはテーマが定義されていません。"
 
@@ -5781,17 +5782,6 @@ msgstr "コメント"
 msgid "Crop"
 msgstr "切り抜き"
 
-#. translators: Theme and Directory Patterns tab title in the block inserter.
-#: wp-includes/js/dist/block-editor.js:42603
-#: wp-includes/js/dist/block-editor.js:43800
-#: wp-includes/js/dist/block-editor.js:49059
-#: wp-includes/js/dist/block-library.js:58090
-#: wp-includes/js/dist/core-commands.js:155
-#: wp-includes/js/dist/edit-site.js:13738
-#: wp-includes/js/dist/edit-site.js:17877 wp-admin/menu.php:209
-msgid "Patterns"
-msgstr "パターン"
-
 #: wp-includes/script-loader.php:1010 wp-includes/js/media-views.js:3531
 #: wp-admin/js/media.js:237 wp-admin/js/post.js:1317
 msgid "The file URL has been copied to your clipboard"
@@ -6058,7 +6048,7 @@ msgstr "%1$s の type スキーマキーワードは組み込みタイプ %2$l �
 #. translators: 1: Theme name. 2: Theme slug.
 #: wp-includes/block-template-utils.php:637
 #: wp-includes/block-template-utils.php:716
-#: wp-includes/block-template-utils.php:848 wp-includes/rest-api.php:730
+#: wp-includes/block-template-utils.php:889 wp-includes/rest-api.php:730
 #: wp-includes/js/dist/block-library.js:32487
 #: wp-includes/js/dist/edit-site.js:12537
 #: wp-includes/js/dist/edit-site.js:14265
@@ -6709,7 +6699,7 @@ msgid "Slug"
 msgstr "スラッグ"
 
 #. translators: %s: Digit to indicate multiple of sizing, eg. 2X-Small.
-#: wp-includes/class-wp-theme-json.php:3552
+#: wp-includes/class-wp-theme-json.php:3570
 #: wp-includes/js/dist/block-library.js:53560
 #: wp-includes/js/dist/components.js:59631
 msgid "Small"
@@ -10690,7 +10680,7 @@ msgstr "タクソノミーの REST ベースルート。"
 msgid "+ %s"
 msgstr "+ %s"
 
-#: wp-includes/l10n.php:1671
+#: wp-includes/l10n.php:1687
 msgctxt "default site language"
 msgid "Site Default"
 msgstr "サイトデフォルト"
@@ -14053,12 +14043,12 @@ msgstr "新しい投稿"
 msgid "Older posts"
 msgstr "過去の投稿"
 
-#: wp-includes/l10n.php:1700
+#: wp-includes/l10n.php:1716
 msgctxt "translations"
 msgid "Available"
 msgstr "利用可能"
 
-#: wp-includes/l10n.php:1663
+#: wp-includes/l10n.php:1679
 msgctxt "translations"
 msgid "Installed"
 msgstr "インストール済み"
@@ -14115,7 +14105,7 @@ msgid "F j, Y"
 msgstr "Y年n月j日"
 
 #. translators: Custom template title in the Site Editor. %s: Author name.
-#: wp-includes/block-template-utils.php:826
+#: wp-includes/block-template-utils.php:867
 msgid "Author: %s"
 msgstr "投稿者: %s"
 
@@ -15785,7 +15775,7 @@ msgid "Attachment Details"
 msgstr "添付ファイルの詳細"
 
 #. translators: %s: Digit to indicate multiple of sizing, eg. 2X-Large.
-#: wp-includes/block-editor.php:173 wp-includes/class-wp-theme-json.php:3589
+#: wp-includes/block-editor.php:173 wp-includes/class-wp-theme-json.php:3607
 #: wp-includes/media-template.php:913 wp-includes/media-template.php:993
 #: wp-includes/media-template.php:1184 wp-includes/media.php:4419
 #: wp-includes/js/dist/block-editor.js:8990
@@ -19030,7 +19020,7 @@ msgid "%s is a protected WP option and may not be modified"
 msgstr "%s は保護されている WP 設定なので変更できません"
 
 #. translators: Used between list items, there is a space after the comma.
-#: wp-includes/class-wp-locale.php:241 wp-includes/l10n.php:1903
+#: wp-includes/class-wp-locale.php:241 wp-includes/l10n.php:1919
 #: wp-includes/js/dist/block-editor.js:64471
 msgid ", "
 msgstr "、"
@@ -20050,7 +20040,7 @@ msgstr "サイズ"
 msgid "Full Size"
 msgstr "フルサイズ"
 
-#: wp-includes/block-editor.php:172 wp-includes/class-wp-theme-json.php:3571
+#: wp-includes/block-editor.php:172 wp-includes/class-wp-theme-json.php:3589
 #: wp-includes/media-template.php:912 wp-includes/media-template.php:992
 #: wp-includes/media-template.php:1183 wp-includes/media.php:4418
 #: wp-includes/js/dist/block-editor.js:8987
