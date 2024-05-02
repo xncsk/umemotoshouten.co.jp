@@ -59,7 +59,7 @@ get_header();
 										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span>ダイノックシート</li>
 										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span>解体工事</li>
 										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span>設備工事</li>
-										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span><span>電気工事業</span></li>
+										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span><span>電気工事</span></li>
 										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span>建築・土木工事の施工請負</li>
 										<li class="df df-ai-center df-nowrap"><span class="i-caret-right mr5"></span>ホテル・旅館・簡易宿泊所等の経営</li>
 										<?php
