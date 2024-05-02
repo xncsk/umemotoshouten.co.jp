@@ -127,7 +127,7 @@ get_header();
 			</section>
 			<section class="mb30">
 				<h2 class="b fs20 mb10">14.プライバシーポリシーの制定日及び改定日</h2>
-				<p>制定：2024年3月1日</p>
+				<p>制定：2024年5月1日</p>
 			</section>
 		</article>
 	</div>
