@@ -124,6 +124,11 @@ html{
 	margin-left: auto;
 	border-left: none;
 	overflow-x: scroll;
+	-ms-overflow-style: none;
+	overflow: -moz-scrollbars-none;
+	&::-webkit-scrollbar {
+		display: none;
+	}
 }
 .breadcrumb-global{
 	display: block;
