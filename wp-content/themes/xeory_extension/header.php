@@ -13,7 +13,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://i.icomoon.io/public/e02a20845c/various/style.css">
+	<link rel="stylesheet" href="https://cdn.icomoon.io/53450/various/style.css?1cmrhx">
 	<?php
 	if(is_page('entry') || is_page('error')){
 		print '<script src="https://yubinbango.github.io/yubinbango/yubinbango.js" charset="UTF-8"></script>';
