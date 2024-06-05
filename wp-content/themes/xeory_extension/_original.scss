@@ -550,7 +550,7 @@ svg {
 }
 .bg-contact{
 	background: $main-color;
-	background:linear-gradient(-45deg, $main-color, lighten($main-color, 20%),$main-color);
+	background:linear-gradient(-65deg, $main-color 40%, saturate($main-color, 50%) 50%,$main-color 60%);
 	background-size: 200% 200%;
 	animation: bggradient 20s ease infinite;
 
