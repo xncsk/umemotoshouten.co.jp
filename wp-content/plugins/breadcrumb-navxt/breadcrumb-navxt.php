@@ -3,7 +3,7 @@
 Plugin Name: Breadcrumb NavXT
 Plugin URI: http://mtekk.us/code/breadcrumb-navxt/
 Description: Adds a breadcrumb navigation showing the visitor&#39;s path to their current location. For details on how to use this plugin visit <a href="http://mtekk.us/code/breadcrumb-navxt/">Breadcrumb NavXT</a>. 
-Version: 7.3.0
+Version: 7.3.1
 Author: John Havlik
 Author URI: http://mtekk.us/
 License: GPL2
@@ -63,7 +63,7 @@ $breadcrumb_navxt = null;
 //TODO change to extends \mtekk\plugKit
 class breadcrumb_navxt
 {
-	const version = '7.3.0';
+	const version = '7.3.1';
 	protected $name = 'Breadcrumb NavXT';
 	protected $identifier = 'breadcrumb-navxt';
 	protected $unique_prefix = 'bcn';
@@ -663,7 +663,7 @@ class breadcrumb_navxt
 			$this->breadcrumb_trail->breadcrumbs = array();
 		}
 		//Generate the breadcrumb trail
-		$this->breadcrumb_trail->fill();
+		$this->breadcrumb_trail->fill($force);
 		$trail_string = $this->breadcrumb_trail->display($linked, $reverse, $template, $outer_template);
 		if($return)
 		{
@@ -769,8 +769,7 @@ function bcn_display_list($return = false, $linked = true, $reverse = false, $fo
 	global $breadcrumb_navxt;
 	if($breadcrumb_navxt !== null)
 	{
-		// return $breadcrumb_navxt->display($return, $linked, $reverse, $force, "<li%3\$s>%1\$s</li>\n", "<ul>%1\$s</ul>\n");
-		return $breadcrumb_navxt->display($return, $linked, $reverse, $force, "<li itemprop=\"itemListElement\" itemscope itemtype=\"https://schema.org/ListItem\">%1\$s</li>\n");
+		return $breadcrumb_navxt->display($return, $linked, $reverse, $force, "<li%3\$s>%1\$s</li>\n", "<ul>%1\$s</ul>\n");
 	}
 }
 /**
