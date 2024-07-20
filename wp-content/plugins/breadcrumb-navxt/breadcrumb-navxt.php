@@ -769,7 +769,8 @@ function bcn_display_list($return = false, $linked = true, $reverse = false, $fo
 	global $breadcrumb_navxt;
 	if($breadcrumb_navxt !== null)
 	{
-		return $breadcrumb_navxt->display($return, $linked, $reverse, $force, "<li%3\$s>%1\$s</li>\n", "<ul>%1\$s</ul>\n");
+		// return $breadcrumb_navxt->display($return, $linked, $reverse, $force, "<li%3\$s>%1\$s</li>\n", "<ul>%1\$s</ul>\n");
+		return $breadcrumb_navxt->display($return, $linked, $reverse, $force, "<li itemprop=\"itemListElement\" itemscope itemtype=\"https://schema.org/ListItem\">%1\$s</li>\n");
 	}
 }
 /**
